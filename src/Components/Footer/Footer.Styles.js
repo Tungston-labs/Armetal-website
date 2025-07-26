@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const FooterWrapper = styled.footer`
 //   width: 100%;
-  background-color: #2c2c2c;
+  background-color:rgb(61, 60, 60);
   background-image: url('/images/footer.png');
   background-repeat: no-repeat;
   background-position: center;

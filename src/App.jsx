@@ -6,7 +6,10 @@ import Sidebar from "./Components/Sidebar/Sidebar"
 import Mission from "./Pages/MainPage/Mission"
 import Features  from "./Pages/MainPage/Features";
 import Terms from "./Pages/Terms/Terms"
+import Terms2 from "./Pages/Terms/Terms2"
 import Sample from "./Pages/Sample"
+import Trust from "./Pages/MainPage/Trust"
+import Contact from "./Pages/MainPage/Contact"
 function App() {
   return (
     <>
@@ -18,6 +21,9 @@ function App() {
 <Route path="/features" element={<Features/>} />
 <Route path="/terms" element={<Terms/>} />
 <Route path="/sample" element={<Sample/>} />
+<Route path="/trust" element={<Trust/>} />
+<Route path="/contact" element={<Contact/>} />
+<Route path="/terms2" element={<Terms2/>} />
       </Routes>
 
     </>

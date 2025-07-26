@@ -17,7 +17,7 @@ import {
 } from './Sample.Styles';
 import Mission from "../Pages/MainPage/Mission"
 import { FiMenu, FiX } from 'react-icons/fi';
-
+import Features from "../Pages/MainPage/Features"
 const HeroSection = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -66,10 +66,10 @@ const HeroSection = () => {
          <MobileRow>
   <CTAWrapper>
     <AppButtonBlack href="#">
-      <img src="/images/google.png" alt="" /> Get it on Google Play
+      <img src="/images/play.png" alt="" /> Get it on <br></br>Google Play
     </AppButtonBlack>
     <AppButtonWhite href="#">
-      <img src="/images/apple.png" alt="" /> Available on the App Store
+      <img src="/images/apple.png" alt="" /> Available on the <br></br>App Store
     </AppButtonWhite>
   </CTAWrapper>
   <HeroImage src="/images/hand.png" alt="Mobile App" />
@@ -92,6 +92,7 @@ const HeroSection = () => {
       </HeroContent>
     </Container>
     <Mission />
+    <Features />
     </>
   );
 };
