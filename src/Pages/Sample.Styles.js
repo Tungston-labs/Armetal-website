@@ -1,0 +1,384 @@
+import styled from 'styled-components';
+
+export const Container = styled.section`
+  background: url('/images/home.png') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 30px ;
+
+  @media (min-width: 768px) {
+    padding: 50px ;
+  }
+`;
+
+// export const NavBar = styled.nav`
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   margin-bottom: 40px;
+// `;
+
+export const Logo = styled.img`
+//   height: 60px;
+width:5%;
+
+  @media (max-width: 480px) {
+    height: 45px;
+  }
+`;
+
+// export const NavLinks = styled.div`
+//   display: flex;
+//   gap: 25px;
+//   font-size: 16px;
+// background-color:white;
+// color:black
+
+//   a {
+//     color: white;
+//     text-decoration: none;
+
+//     &:hover {
+//       text-decoration: underline;
+//     }
+//   }
+
+//   @media (max-width: 600px) {
+//     flex-wrap: wrap;
+//     gap: 15px;
+//     justify-content: center;
+//   }
+// `;
+
+export const HeroContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    // align-items: center;
+    // margin-top:50px;
+    justify-content: space-between;
+  }
+`;
+
+export const Title = styled.h1`
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.4;
+margin-top:80px;
+  @media (min-width: 768px) {
+    font-size: 36px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 42px;
+  }
+`;
+
+export const SubTitle = styled.h3`
+  font-size: 18px;
+  margin: 15px 0;
+
+  @media (min-width: 768px) {
+    font-size: 22px;
+  }
+`;
+
+export const Description = styled.p`
+  font-size: 16px;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+`;
+
+export const CTAWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+
+  a {
+    text-decoration: none;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  &.desktop-only {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+`;
+
+export const AppButton = styled.a`
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+
+  img {
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: #222;
+  }
+`;
+
+export const HeroImage = styled.img`
+  // max-width: 300px;
+  // height: auto;
+  // margin-top: -70px;
+
+  &.desktop-only {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100px;
+    // margin-left: 10px;
+  }
+    @media (max-width: 468px) {
+    max-width: 80px;
+    // margin-left: 10px;
+  }
+`;
+
+export const MobileRow = styled.div`
+  display: flex;
+ 
+  align-items: center;
+  justify-content: space-between;
+  // gap: 15px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+//  export const Container = styled.div`
+//   width: 100%;
+//   padding: 0;
+//   margin: 0;
+// `;
+
+export const NavBar = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // padding: 1rem ;
+  
+  width: 100%; 
+  @media (max-width: 768px) {
+    // padding: 1rem;
+    
+  }
+`;
+
+
+// export const Logo = styled.img`
+//   height: 50px;
+// `;
+
+export const NavLinks = styled.div`
+  display: flex;
+  gap: 5rem; 
+  background-color: white;
+  height: 40px;
+  align-items: center;
+  justify-content: flex-end;
+  padding:5px;
+  margin-left: auto; 
+  padding-right: 20px;  
+  width: fit-content;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+
+export const MobileMenuIcon = styled.div`
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
+export const MobileNavLinks = styled.div`
+  display: ${({ $isOpen }) => ($isOpen ? 'flex' : 'none')};
+  flex-direction: column;
+  padding: 1rem 2rem;
+  background-color: white;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;
+
+// export const GooglePlayButton = styled.a`
+//   display: flex;
+//   align-items: center;
+//   background-color: #0f9d58; /* Google Play green */
+//   color: white;
+//   padding: 10px 20px;
+//   border-radius: 8px;
+//   font-weight: 600;
+//   font-size: 14px;
+//   transition: 0.3s ease;
+
+//   img {
+//     height: 20px;
+//     margin-right: 10px;
+//   }
+
+//   &:hover {
+//     background-color: #0c7b44;
+//   }
+// `;
+
+// export const AppStoreButton = styled.a`
+//   display: flex;
+//   align-items: center;
+//   background-color: #0070c9; /* App Store blue */
+//   color: white;
+//   padding: 10px 20px;
+//   border-radius: 8px;
+//   font-weight: 600;
+//   font-size: 14px;
+//   transition: 0.3s ease;
+
+//   img {
+//     height: 20px;
+//     margin-right: 10px;
+//   }
+
+//   &:hover {
+//     background-color: #005fa3;
+//   }
+// `;
+
+// export const MobileRow = styled.div`
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   gap: 10px;
+//   flex-wrap: nowrap;
+
+//   @media (min-width: 768px) {
+//     display: none;
+//   }
+// `;
+
+// export const CTAWrapper = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   gap: 10px;
+
+//   @media (max-width: 767px) {
+//     flex-direction: column;
+//   }
+
+//   @media (min-width: 768px) {
+//     flex-direction: row;
+//     gap: 20px;
+//   }
+
+//   &.desktop-only {
+//     display: none;
+
+//     @media (min-width: 768px) {
+//       display: flex;
+//     }
+//   }
+// `;
+
+export const AppButtonBlack = styled.a`
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+
+  img {
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  &:hover {
+    background-color:black;
+    color:white
+  }
+`;
+
+export const AppButtonWhite = styled.a`
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border: 2px solid #000;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+
+  img {
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  &:hover {
+    background-color:gray;
+    color:black;
+  }
+`;
+
+// export const HeroImage = styled.img`
+//   width: 90px;
+//   height: auto;
+
+//   @media (min-width: 768px) {
+//     width: 150px;
+//   }
+// `;
+
