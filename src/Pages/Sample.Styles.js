@@ -180,7 +180,10 @@ export const HeroImage = styled.img`
     }
      
   }
-
+ @media (min-width: 768px) {
+    max-width: 800px;
+    // margin-left: 10px;
+  }
   @media (max-width: 768px) {
     max-width: 100px;
     // margin-left: 10px;
@@ -376,7 +379,7 @@ height:35%;
     color:white
   }
      @media (min-width: 769px) {
-  
+  width:50%
   }
      @media (max-width: 449px) {
   width:90%;
@@ -407,7 +410,9 @@ height:35%;
     background-color:gray;
     color:black;
   }
-
+   @media (min-width: 769px) {
+  width:50%
+  }
      @media (max-width: 449px) {
   width:90%;
     height:50px;
@@ -467,7 +472,7 @@ export const NavLinks = styled.nav`
   align-items: center;           // vertically center items
   justify-content: center;       // horizontally center items inside the navbar
   background-color: white;
-  width: 40%;
+  width: 50%;
   height: 50px;
   position: absolute;            // place on right side
   right: 0;                      // align to the right

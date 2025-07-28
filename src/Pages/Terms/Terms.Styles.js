@@ -7,7 +7,7 @@ export const PageWrapper = styled.div`
   background-size: cover;
   // background-position: center;
   background-repeat: no-repeat;
-    height:100vh;
+    // height:100vh;
   padding: 30px;
 
   @media (max-width: 768px) {
@@ -59,7 +59,7 @@ export const NavLinks = styled.nav`
   align-items: center;          
   justify-content: center;       
   background-color: white;
-  width: 40%;
+  width: 50%;
   height: 50px;
   position: absolute;           
   right: 0;                     

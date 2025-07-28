@@ -59,7 +59,7 @@ export const NavLinks = styled.nav`
   align-items: center;           // vertically center items
   justify-content: center;       // horizontally center items inside the navbar
   background-color: white;
-  width: 40%;
+  width: 50%;
   height: 50px;
   position: absolute;            // place on right side
   right: 0;                      // align to the right

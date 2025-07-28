@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const MissionVisionContainer = styled.section`
   width: 100%;
-  min-height: 100vh;
+  min-height: 150vh;
   text-align: center;
   display: flex;
   flex-direction: column;

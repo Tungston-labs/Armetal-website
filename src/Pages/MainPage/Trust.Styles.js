@@ -9,6 +9,8 @@ export const Container = styled.div`
   @media (min-width: 768px) {
     padding: 80px 60px;
   }
+
+  
 `;
 
 export const Title = styled.h2`
@@ -20,6 +22,10 @@ export const Title = styled.h2`
   @media (max-width: 768px) {
     font-size: 24px;
     text-align: center;
+  }
+     @media (min-width: 768px) {
+    // padding: 80px 60px;
+    font-size:35px;
   }
 `;
 
@@ -35,6 +41,11 @@ export const LogosWrapper = styled.div`
   @media (max-width: 480px) {
  margin-top:20px;
   }
+  @media (min-width: 768px) {
+    // padding: 80px 60px;
+    margin-left:18%;
+    margin-top:-20px;
+  }
 `;
 
 export const LogoImage = styled.img`
@@ -43,6 +54,10 @@ export const LogoImage = styled.img`
 
   @media (max-width: 480px) {
     height: 40px;
+  }
+     @media (min-width: 768px) {
+    // padding: 80px ;
+    
   }
 `;
 
@@ -56,5 +71,8 @@ export const Description = styled.p`
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 0 10px;
+  }
+     @media (min-width: 768px) {
+    // padding: 80px;
   }
 `;
