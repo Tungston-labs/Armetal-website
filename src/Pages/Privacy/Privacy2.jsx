@@ -6,7 +6,7 @@ import {
   Section,
   SectionTitle,
   Text,
-} from "./Terms2.Styles";
+} from "./Privacy2.Styles";
 
 const Terms = () => {
   return (
@@ -14,23 +14,12 @@ const Terms = () => {
 
 
       <Section>
-        <SectionTitle>Data Protection Commitment</SectionTitle>
-        <Text>Rekory stores your data solely on private servers.</Text>
-        <Text>We do not share your information with third parties.</Text>
-        <Text>All data is safeguarded with industry-leading security.</Text>
-      </Section>
-
-      
-
-      <Section>
         <SectionTitle>Intellectual Property</SectionTitle>
-        <Text>
-          All content, technology, and designs within Rekory are the sole
-          property of Rekory. Reproduction or redistribution is prohibited
-          without permission.
-        </Text>
+        <Text>All content, technology, and designs within Rekory are the sole property of Rekory. Reproduction or redistribution is 
+          <br></br> prohibited without permission.</Text>
+       
       </Section>
-
+      
       <Section>
         <SectionTitle>Subscriptions & Billing</SectionTitle>
         <Text>

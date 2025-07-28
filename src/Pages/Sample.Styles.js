@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  background: url('/images/home.png') no-repeat center ;
+  background: url('/images/HOME.png') no-repeat center ;
   background-size: cover;
   color: white;
   padding: 30px ;
@@ -187,13 +187,13 @@ export const HeroImage = styled.img`
   }
     @media (max-width: 468px) {
     max-width: 150px;
-    // margin-left: -10px;
+        // margin-left: -10px;
   }
 `;
 
 export const MobileRow = styled.div`
   display: flex;
- 
+ margin-top:-10px
   align-items: center;
   justify-content: space-between;
   // gap: 15px;
@@ -226,28 +226,28 @@ export const NavBar = styled.nav`
 //   height: 50px;
 // `;
 
-export const NavLinks = styled.div`
-  display: flex;
-  gap: 7rem; 
-  background-color: white;
-  height: 60px;
-  align-items: center;
-  justify-content: flex-end;
-  padding:5px;
-  margin-left: auto; 
-  padding-right: 30px 20px;  
-  width: fit-content;
-font-size:20px;
-  a {
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-  }
+// export const NavLinks = styled.div`
+//   display: flex;
+//   gap: 7rem; 
+//   background-color: white;
+//   height: 60px;
+//   align-items: center;
+//   justify-content: flex-end;
+//   padding:5px;
+//   margin-left: auto; 
+//   padding-right: 30px 20px;  
+//   width: fit-content;
+// font-size:20px;
+//   a {
+//     text-decoration: none;
+//     color: #000;
+//     font-weight: 500;
+//   }
 
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
+//   @media (max-width: 768px) {
+//     display: none;
+//   }
+// `;
 
 
 export const MobileMenuIcon = styled.div`
@@ -380,6 +380,7 @@ height:35%;
   }
      @media (max-width: 449px) {
   width:90%;
+  height:50px;
   font-size:10px;
   }
 `;
@@ -409,6 +410,7 @@ height:35%;
 
      @media (max-width: 449px) {
   width:90%;
+    height:50px;
   font-size:10px;
   }
 `;
@@ -422,3 +424,96 @@ height:35%;
 //   }
 // `;
 
+export const Header = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 10px 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+`;
+
+export const LogoWrapper = styled.div`
+  display: flex;
+  margin-left: 10%;
+
+  img {
+    height: 150px;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    img {
+      height: 100px; // smaller logo for mobile
+    }
+  }
+`;
+
+
+
+export const NavLinks = styled.nav`
+  display: flex;
+  gap: 50px;
+  color: black;
+  align-items: center;           // vertically center items
+  justify-content: center;       // horizontally center items inside the navbar
+  background-color: white;
+  width: 40%;
+  height: 50px;
+  position: absolute;            // place on right side
+  right: 0;                      // align to the right
+  top: 10;                        // stick to top (optional)
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    position: static;
+  }
+`;
+
+export const NavLink = styled.a`
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  font-weight: ${({ active }) => (active ? 'bold' : 'normal')};
+  text-decoration: ${({ active }) => (active ? 'underline' : 'none')};
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const SectionDescription = styled.p`
+  font-size: 1.1em;
+  line-height: 1.6;
+  background: #2C2C2C;
+  margin: 0;
+  margin-top:-50px;
+  padding: 40px 20px;
+  // width: 100%;
+  color: white;
+  text-align: center;
+color: #FFF;
+text-align: center;
+font-family: "Reddit Sans";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  @media (max-width: 768px) {
+    font-size: 20px;
+    // padding: 60px 100px;
+  }
+`;

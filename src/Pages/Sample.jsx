@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import {
   Container,
   NavBar,
-  Logo,
+  Logo,Header,
   NavLinks,
   MobileMenuIcon,
   MobileNavLinks,
-  HeroContent,
-  Title,
-  SubTitle,
+  HeroContent,NavLink,
+  Title,LogoWrapper,
+  SubTitle,SectionDescription,
   Description,
   CTAWrapper,
   AppButtonWhite,AppButtonBlack,
@@ -18,6 +18,7 @@ import {
 import Mission from "../Pages/MainPage/Mission"
 import { FiMenu, FiX } from 'react-icons/fi';
 import Features from "../Pages/MainPage/Features"
+import { Link } from 'react-router-dom';
 const HeroSection = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -28,28 +29,23 @@ const HeroSection = () => {
   return (
     <>
     <Container>
-      <NavBar>
-        <Logo src="/images/logos.png" alt="Rekory Logo" />
-        
-        {/* Desktop Nav */}
+        <Header>
+        <LogoWrapper>
+        <img
+          src="/images/logos.png"
+          alt="Rekory Logo"
+          className="logo-image"
+        />
+      </LogoWrapper>
+      
+      
         <NavLinks>
-          <a href="#">Home</a>
-          <a href="#">Terms and Conditions</a>
-          <a href="#">Privacy and Policy</a>
-        </NavLinks>
-
-        {/* Hamburger Icon */}
-        <MobileMenuIcon onClick={toggleMenu}>
-          {isMobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-        </MobileMenuIcon>
-      </NavBar>
-
-      {/* Mobile Dropdown Menu */}
-      <MobileNavLinks isOpen={isMobileMenuOpen}>
-        <a href="#">Home</a>
-        <a href="#">Terms and Conditions</a>
-        <a href="#">Privacy and Policy</a>
-      </MobileNavLinks>
+  <NavLink to="/" as={Link} active>Home</NavLink>
+  <NavLink to="/terms" as={Link} >Terms and Conditions</NavLink>
+  <NavLink to="/privacy" as={Link}>Privacy and Policy</NavLink>
+</NavLinks>
+      </Header>
+      
 
       <HeroContent>
         <div>
@@ -90,7 +86,14 @@ const HeroSection = () => {
         {/* Desktop Image */}
         <HeroImage className="desktop-only" src="/images/hand.png" alt="Mobile App" />
       </HeroContent>
+     
     </Container>
+     <SectionDescription>
+              Rekory is a simple, user-friendly HR app available on both iOS and Android, making workforce management
+              easy from anywhere. It offers everything from employee onboarding and performance tracking to advanced
+              HR analytics—all in one place. Designed for modern teams, Rekory helps streamline HR tasks and boost
+              productivity.
+            </SectionDescription>
     <Mission />
     <Features />
     </>

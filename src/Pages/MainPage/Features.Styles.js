@@ -68,8 +68,9 @@ export const FeatureCard = styled.div`
     transform: scale(1.05);
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 786px) {
     width: 180px;
+
     font-size: 14px;
     // flex-direction: column; 
     text-align: center;
@@ -82,7 +83,7 @@ export const TransparentCard = styled.div`
   ${({ position }) => (position === "right" ? "right: 0" : "left: 0")};
   width: 450px;
   min-height: 450px;
-background: rgba(34, 56, 126, 0.20);
+background: rgba(0, 22, 94, 0.2);
   backdrop-filter: blur(7px);
   // border: 2px dashed #ccc;
   // border-radius: 12px;
@@ -96,7 +97,7 @@ background: rgba(34, 56, 126, 0.20);
   flex-direction: column;
    flex-shrink: 0;
 
-   color: black;
+   color: white;
 font-family: "Reddit Sans";
 font-size: 30px;
 font-style: normal;

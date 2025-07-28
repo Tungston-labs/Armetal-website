@@ -9,20 +9,28 @@ import {
   Paragraph,
   SectionTitle
 } from './Terms.Styles';
-
+import Terms2 from "./Terms2"
+import { Link } from 'react-router-dom';
+import Contact from "../../Components/Footer/Footer"
 const TermsPage = () => {
   return (
+  <>
     <PageWrapper>
       <Header>
   <LogoWrapper>
-    <img src="/images/logos.png" alt="Rekory Logo" style={{ height: '90px' }} />
-  </LogoWrapper>
+  <img
+    src="/images/logos.png"
+    alt="Rekory Logo"
+    className="logo-image"
+  />
+</LogoWrapper>
 
-  <NavLinks>
-    <NavLink href="#">Home</NavLink>
-    <NavLink href="#" active>Terms and Conditions</NavLink>
-    <NavLink href="#">Privacy and Policy</NavLink>
-  </NavLinks>
+
+<NavLinks>
+  <NavLink to="/" as={Link}>Home</NavLink>
+  <NavLink to="/terms" as={Link} active>Terms and Conditions</NavLink>
+  <NavLink to="/privacy" as={Link}>Privacy and Policy</NavLink>
+</NavLinks>
 </Header>
 
 
@@ -56,8 +64,13 @@ const TermsPage = () => {
         To comply with all relevant HR, employment, and data protection laws.<br></br>
        To enter only accurate and lawful data.
         </Paragraph>
+
+        
       </ContentWrapper>
     </PageWrapper>
+    <Terms2 />
+    <Contact />
+    </>
   );
 };
 

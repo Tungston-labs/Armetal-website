@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const PageWrapper = styled.div`
-  min-height: 100vh;
+  // min-height: 100vh;
   color: #fff;
-  background-image: url('/images/Home.png');
+  background-image: url('/images/HOME.png');
   background-size: cover;
-  background-position: center;
+  // background-position: center;
   background-repeat: no-repeat;
+    height:100vh;
   padding: 30px;
 
   @media (max-width: 768px) {
@@ -31,33 +32,52 @@ export const Header = styled.header`
 
 export const LogoWrapper = styled.div`
   display: flex;
-  // align-items: center;
-  margin-left:10%
+  margin-left: 10%;
+
+  img {
+    height: 150px;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    img {
+      height: 100px; // smaller logo for mobile
+    }
+  }
 `;
+
+
 
 export const NavLinks = styled.nav`
   display: flex;
   gap: 50px;
-color:black;
-align-item:center;
-justify-content:center;
- background-color:white;
-width:40%;
-height:50px;
+  color: black;
+  align-items: center;          
+  justify-content: center;       
+  background-color: white;
+  width: 40%;
+  height: 50px;
+  position: absolute;           
+  right: 0;                     
+  top: 10;                        
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    width: 100%;
+    position: static;
   }
 `;
 
 export const NavLink = styled.a`
   color: black;
   text-align: center;
-
-// background-color:white;
-font-size:25px;
+  font-size: 25px;
   font-weight: ${({ active }) => (active ? 'bold' : 'normal')};
   text-decoration: ${({ active }) => (active ? 'underline' : 'none')};
   cursor: pointer;
@@ -66,8 +86,6 @@ font-size:25px;
     text-decoration: underline;
   }
 `;
-
-
 export const ContentWrapper = styled.div`
   margin-top: 40px;
   // max-width: 900px;
@@ -84,18 +102,17 @@ export const Title = styled.h1`
   text-align: center;
 justify-content:center;
   @media (max-width: 768px) {
-    font-size: 1.5rem;
-  }
+    font-size: 30px
 `;
 
 export const SectionTitle = styled.h3`
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 600;
   margin-top: 25px;
   margin-bottom: 20px;
 
   @media (max-width: 768px) {
-    font-size: 1.1rem;
+    font-size: 25PX;
   }
 `;
 
@@ -104,12 +121,12 @@ export const Paragraphs = styled.p`
   align-item:center;
   text-align: center;
   margin-top:30px;
-
+  margin: 4px 0;
   justify-content:center;
   margin-bottom: 10px;
 
   @media (max-width: 768px) {
-    font-size: 0.95rem;
+    font-size: 20PX;
   }
 `;
 export const Paragraph = styled.p`
@@ -118,7 +135,7 @@ export const Paragraph = styled.p`
   margin-bottom: 10px;
   line-height: 1.6;
   @media (max-width: 768px) {
-    font-size: 0.95rem;
+    font-size: 20px;
   }
 `;
 export const Para = styled.p`
@@ -127,6 +144,6 @@ export const Para = styled.p`
   margin-bottom: 10px;
   // line-height: 1.6;
   @media (max-width: 768px) {
-    font-size: 0.95rem;
+     font-size: 20px;
   }
     `;

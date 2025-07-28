@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   MissionVisionContainer,
-  SectionDescription,
+  // SectionDescription,
   StatementsGrid,
   StatementCard,
   CardTitle,
@@ -11,12 +11,12 @@ import {
 const MissionVisionSection = () => {
   return (
     <MissionVisionContainer >
-      <SectionDescription>
+      {/* <SectionDescription>
         Rekory is a simple, user-friendly HR app available on both iOS and Android, making workforce management
         easy from anywhere. It offers everything from employee onboarding and performance tracking to advanced
         HR analytics—all in one place. Designed for modern teams, Rekory helps streamline HR tasks and boost
         productivity.
-      </SectionDescription>
+      </SectionDescription> */}
 
       <StatementsGrid>
         <StatementCard>

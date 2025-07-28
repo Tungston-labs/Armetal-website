@@ -32,7 +32,7 @@ export const Title = styled.h1`
 export const Section = styled.div`
   margin-bottom: 0px;
   padding: 20px;
-
+// margin-top:10px;
     @media (max-width: 768px) {
     padding: 10px;
   }
