@@ -91,7 +91,9 @@ box-shadow: 0 4px 24.9px 0 rgba(0, 0, 0, 0.35);
       transform: translateY(-200px);
     }
   }
-
+  &:hover {
+    background-color:white;
+    color:darkblue;
   &:before {
     content: '';
     position: absolute;
@@ -120,6 +122,7 @@ box-shadow: 0 4px 24.9px 0 rgba(0, 0, 0, 0.35);
     transform: rotate(20deg);
   }
     
+
      @media (max-width: 768px) {
    max-width: 220px;
   
