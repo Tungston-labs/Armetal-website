@@ -7,10 +7,11 @@ import Mission from "./Pages/MainPage/Mission"
 import Features  from "./Pages/MainPage/Features";
 import Terms from "./Pages/Terms/Terms"
 import Terms2 from "./Pages/Terms/Terms2"
-import Sample from "./Pages/Sample"
+import Sample from "./Pages/MainPage/Sample"
 import Trust from "./Pages/MainPage/Trust"
 import Contact from "./Pages/MainPage/Contact"
 import Privacy from "./Pages/Privacy/Privacy"
+import Website from "./Pages/Website"
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
 <Route path="/contact" element={<Contact/>} />
 <Route path="/terms2" element={<Terms2/>} />
 <Route path="/privacy" element={<Privacy />}/>
+<Route path="/website" element={<Website />}/>
       </Routes>
 
     </>

@@ -215,7 +215,8 @@ export const AppButton = styled.a`
   max-width: 250px;
 
   &:hover {
-    background-color: #555;
+    background-color: #ccc;
+    color:black;
   }
 
   img {

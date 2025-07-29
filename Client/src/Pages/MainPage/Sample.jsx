@@ -15,9 +15,9 @@ import {
   HeroImage,
   MobileRow
 } from './Sample.Styles';
-import Mission from "./MainPage/Mission"
+import Mission from "./Mission"
 import { FiMenu, FiX } from 'react-icons/fi';
-import Features from "./MainPage/Features"
+import Features from "./Features"
 import { Link } from 'react-router-dom';
 const HeroSection = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -65,7 +65,7 @@ const HeroSection = () => {
       <img src="/images/play.png" alt="" /> Get it on <br></br>Google Play
     </AppButtonBlack>
     <AppButtonWhite href="#">
-      <img src="/images/apple.png" alt="" /> Available on the <br></br>App Store
+      <img src="/images/Apple.png" alt="" /> Available on the <br></br>App Store
     </AppButtonWhite>
   </CTAWrapper>
   <HeroImage src="/images/hand.png" alt="Mobile App" />
@@ -77,7 +77,7 @@ const HeroSection = () => {
     <img src="/images/play.png" alt="" /> Get it on <br></br>Google Play
   </AppButtonBlack>
   <AppButtonWhite href="#">
-    <img src="/images/apple.png" alt="" /> Available on the<br></br> App Store
+    <img src="/images/Apple.png" alt="" /> Available on the<br></br> App Store
   </AppButtonWhite>
 </CTAWrapper>
 

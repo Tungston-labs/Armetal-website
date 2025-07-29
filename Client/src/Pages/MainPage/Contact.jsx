@@ -101,7 +101,7 @@ const ContactForm = () => {
               GET IT ON <br /> Google Play
             </AppButton>
             <AppButton href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
-              <img src="/images/apple.png" alt="Available on the App Store" />
+              <img src="/images/Apple.png" alt="Available on the App Store" />
               Available on the <br /> App Store
             </AppButton>
           </AppStoreButtons>

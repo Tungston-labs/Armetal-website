@@ -307,12 +307,17 @@ export const AppButtonWhite = styled.a`
 width:28%;
 height:35%;
   img {
-    height: 40px;
-    margin-right: 8px;
-  }
+  height: 40px;
+  margin-right: 8px;
+  filter: brightness(0) invert(1); /* white logo */
+}
+
+&:hover img {
+  filter: brightness(0) invert(0); /* instantly black on hover */
+}
 
   &:hover {
-    background-color:gray;
+    background-color:white;
     color:black;
   }
    @media (min-width: 769px) {
