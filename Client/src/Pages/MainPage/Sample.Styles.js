@@ -374,7 +374,7 @@ export const LogoWrapper = styled.div`
 export const NavLinks = styled.nav`
   display: flex;
   gap: 50px;
-  color: black;
+  // color: black;
   align-items: center;           // vertically center items
   justify-content: center;       // horizontally center items inside the navbar
   background-color: white;
@@ -394,8 +394,12 @@ export const NavLinks = styled.nav`
 `;
 
 export const NavLink = styled.a`
-  color: black;
+  // color: black;
+  color: #273F8F;
   text-align: center;
+  font-family: "Reddit Sans";
+font-weight: 700;
+
   font-size: 25px;
   font-weight: ${({ active }) => (active ? 'bold' : 'normal')};
   text-decoration: ${({ active }) => (active ? 'underline' : 'none')};

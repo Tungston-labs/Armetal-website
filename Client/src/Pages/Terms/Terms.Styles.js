@@ -78,6 +78,9 @@ export const NavLink = styled.a`
   color: black;
   text-align: center;
   font-size: 25px;
+    color: #273F8F;
+    font-weight:700;
+      font-family: "Reddit Sans";
   font-weight: ${({ active }) => (active ? 'bold' : 'normal')};
   text-decoration: ${({ active }) => (active ? 'underline' : 'none')};
   cursor: pointer;
