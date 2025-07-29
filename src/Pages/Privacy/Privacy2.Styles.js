@@ -55,12 +55,13 @@ line-height: normal;
 
 export const Text = styled.p`
   margin: 4px 0;
-  line-height: 1.6;
+  // line-height: 1.6;
   color: #FFF;
+
 font-family: Lato;
 font-size: 32px;
 font-style: normal;
-font-weight: 400;
+font-weight: 300;
 line-height: normal;
 
 @media (max-width: 768px) {

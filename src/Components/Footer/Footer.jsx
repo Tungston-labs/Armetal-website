@@ -13,17 +13,18 @@ import {
 } from './Footer.Styles';
 
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <FooterWrapper>
       <FooterContent>
         <Logo src="/images/logos.png" alt="REKORY Logo" />
-        <NavLinks>
-          <NavItem>Home</NavItem>
-          <NavItem>Terms and Conditions</NavItem>
-          <NavItem>Privacy and Policy</NavItem>
-        </NavLinks>
+       <NavLinks>
+  <NavItem><Link style={{color:"white"}} to="/">Home</Link></NavItem>
+  <NavItem><Link style={{color:"white"}} to="/terms">Terms and Conditions</Link></NavItem>
+  <NavItem><Link style={{color:"white"}} to="/privacy">Privacy and Policy</Link></NavItem>
+</NavLinks>
 
         <ContactSection>
           <ContactItem>

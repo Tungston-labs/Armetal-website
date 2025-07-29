@@ -56,6 +56,7 @@ export const Title = styled.h2`
   font-weight: 700;
   line-height: 133.863%; /* 60.239px */
   margin-bottom: 20px;
+font-family: "Reddit Sans";
 
   span {
     color: #fff;
@@ -75,6 +76,7 @@ export const Paragraph = styled.p`
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
+font-family: "Lato";
 
   @media (max-width: 768px) {
     font-size: 16px;
@@ -125,7 +127,7 @@ export const Row = styled.div`
 export const Input = styled.input`
   padding: 10px;
   font-size: 1rem;
-  border: 1px solid #A9CBF7;
+  // border: 1px solid #A9CBF7;
   background: #2F2F2F;
   color: white;
   flex: 1;
@@ -139,7 +141,7 @@ export const Input = styled.input`
 export const TextArea = styled.textarea`
   padding: 10px;
   font-size: 1rem;
-  border: 1px solid #A9CBF7;
+  // border: 1px solid #A9CBF7;
   background: #2F2F2F;
   color: white;
   resize: none;
@@ -152,6 +154,10 @@ export const TextArea = styled.textarea`
 
 export const SubmitButton = styled.button`
   background-color: #94ADFF;
+    display: inline-flex;              // ✅ keeps icon + text inline
+  align-items: center;       
+  justify-content:center;       // ✅ vertically center icon + text
+  gap: 8px;  
   border: none;
   padding: 12px;
   border-radius: 5px;
@@ -162,7 +168,7 @@ export const SubmitButton = styled.button`
   transition: background 0.3s ease;
 
   &:hover {
-    background-color: #6a9eff;
+    background-color:rgb(106, 150, 236);
   }
 
   @media (max-width: 480px) {

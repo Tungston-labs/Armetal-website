@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const MissionVisionContainer = styled.section`
   width: 100%;
-  min-height: 150vh;
+  min-height: 100vh;
   text-align: center;
+  // height:100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -28,6 +29,8 @@ font-size: 32px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+
+
   @media (min-width: 768px) {
     font-size: 1.5rem;
     padding: 60px 100px;
@@ -36,7 +39,7 @@ line-height: normal;
 
 export const StatementsGrid = styled.div`
   // width: 100%;
-  margin-top:20px;
+  margin-top:10%;
   padding: 60px 20px;
   // background-image: url('/images/mission.png');
   background-size: cover;
@@ -60,7 +63,7 @@ export const StatementCard = styled.div`
   // background-color: rgba(45, 54, 66, 0.6); 
   border-radius: 10px;
   padding: 30px;
-  min-height: 400px;
+  min-height: 500px;
   // box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   max-width: 500px;
   width: 100%;
@@ -72,20 +75,20 @@ export const StatementCard = styled.div`
   position: relative;
   overflow: hidden;
   color: white;
-  backdrop-filter: blur(3px); /* Optional: adds glass effect */
+  backdrop-filter: blur(3px);
 border-radius: 10px;
 background: linear-gradient(254deg, rgba(51, 82, 186, 0.20) 0.8%, rgba(23, 37, 84, 0.20) 99.2%);
 box-shadow: 0 4px 24.9px 0 rgba(0, 0, 0, 0.35);
   @media (min-width: 768px) {
     flex: 1;
-    max-width: 600px;
+    max-width: 700px;
 
     &:nth-child(1) {
       transform: translateY(200px);
     }
 
     &:nth-child(2) {
-      transform: translateY(-60px);
+      transform: translateY(-200px);
     }
   }
 
@@ -116,18 +119,29 @@ box-shadow: 0 4px 24.9px 0 rgba(0, 0, 0, 0.35);
     opacity: 0.08;
     transform: rotate(20deg);
   }
+    
+     @media (max-width: 768px) {
+   max-width: 220px;
+  
 `;
 
 export const CardTitle = styled.h3`
   font-size: 42px;
   margin-bottom: 20px;
+    font-family:"REddit sans";
   color: var(--light-text);
   z-index: 1;
+    @media (max-width: 768px) {
+   font-size:20px;
 `;
 
 export const CardText = styled.p`
   font-size: 25px;
+    font-family:"Lato";
   // line-height: 1.7;
   color: var(--gray-text);
   z-index: 1;
+  @media (max-width: 768px) {
+   font-size:15px;
+
 `;

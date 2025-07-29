@@ -29,6 +29,7 @@ export const FooterContent = styled.div`
   width: 100%;
   text-align: center;
   padding: 0 20px;
+  color:white;
 `;
 
 export const Logo = styled.img`
@@ -45,9 +46,15 @@ export const NavLinks = styled.ul`
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
-  gap: 24px;
+  gap: 134px;
   padding: 0;
   margin: 20px 0;
+color:white;
+   @media (max-width: 768px) {
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
 
   @media (max-width: 480px) {
     gap: 16px;
@@ -55,12 +62,17 @@ export const NavLinks = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  font-size: 16px;
-  color: #ffffff;
+
   cursor: pointer;
   position: relative;
   white-space: nowrap;
-
+color:white;
+text-align: center;
+font-family: "Reddit Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
   &:hover {
     color: #1a73e8;
   }
@@ -76,41 +88,73 @@ export const NavItem = styled.li`
 `;
 
 export const ContactSection = styled.div`
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   align-items: center;
-  gap: 12px;
+  // gap: 24px;
   font-size: 14px;
   margin-top: 20px;
+font-family: "Reddit Sans";
+  
+display: inline-flex;
+justify-content: center;
+align-items: center;
+gap: 43px;
+ @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-  @media (min-width: 768px) {
-    font-size: 16px;
+  @media (max-width: 480px) {
+    gap: 16px;
   }
 `;
-
 export const ContactItem = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  flex-direction: column;
-  text-align: center;
+font-family: "Reddit Sans";
 
+  flex-direction: column;
+  text-align: left;
+color: #FFF;
+font-family: "Reddit Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ 
   @media (min-width: 768px) {
     flex-direction: row;
+    text-align: left;
+    gap: 12px;
+    font-size: 18px;
   }
 `;
-
 export const Icon = styled.span`
   font-size: 18px;
   color: #ccc;
+
+   @media (max-width: 480px) {
+    font-size: 18px;
+  }
+
 `;
 
 export const FooterNote = styled.p`
   font-size: 13px;
   color: #ccc;
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
+color: #FFF;
+text-align: center;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+font-family: "Reddit Sans";
 
+line-height: normal;
   @media (max-width: 480px) {
     font-size: 12px;
     margin-top: 30px;
@@ -121,6 +165,6 @@ export const BottomCurve = styled.div`
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 80px;
+  height: 20px;
   z-index: -1;
 `;

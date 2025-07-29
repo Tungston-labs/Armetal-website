@@ -60,7 +60,7 @@ export const Text = styled.p`
 font-family: Lato;
 font-size: 32px;
 font-style: normal;
-font-weight: 400;
+font-weight: 300;
 line-height: normal;
 
 @media (max-width: 768px) {

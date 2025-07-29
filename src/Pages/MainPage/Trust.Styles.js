@@ -18,6 +18,7 @@ export const Title = styled.h2`
   font-weight: 700;
 //   margin-bottom: 40px;
   text-align: left;
+font-family: "Reddit Sans";
 
   @media (max-width: 768px) {
     font-size: 24px;
@@ -30,28 +31,28 @@ export const Title = styled.h2`
 `;
 
 export const LogosWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  margin-bottom: 40px;
-  margin-top:-10%;
-
+  // display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  // gap: 70px;
+  margin-bottom: 80px;
+  // margin-top: -10%;
 
   @media (max-width: 480px) {
- margin-top:20px;
+    margin-top: 20px;
+    grid-template-columns: 1fr; 
   }
+
   @media (min-width: 768px) {
-    // padding: 80px 60px;
-    margin-left:18%;
-    margin-top:-20px;
+    // margin-left: 18%;
+    margin-top: -20px;
   }
 `;
 
 export const LogoImage = styled.img`
   height: 80px;
   object-fit: contain;
-
+  margin-left:4%;
+//  width: 50%;
   @media (max-width: 480px) {
     height: 40px;
   }
@@ -67,6 +68,7 @@ export const Description = styled.p`
   font-size: 20px;
   line-height: 1.6;
   font-weight: 400;
+font-family: "Reddit Sans";
 
   @media (max-width: 768px) {
     font-size: 14px;

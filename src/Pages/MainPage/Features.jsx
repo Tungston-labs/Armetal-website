@@ -145,7 +145,7 @@ const AutoScrollSlider = () => {
               </FeatureCard>
             ))}
           </ScrollContainer>
-          <TransparentCard position="right">Smart Solutions for Ambitious Teams
+          <TransparentCard position="right" >Smart Solutions for Ambitious Teams
             Built for scale, Rekory empowers growing businesses with intelligent automation, smooth workflows, and enterprise-grade control at your fingertips.</TransparentCard>
         </RowWrapper>
       </SliderWrapper>

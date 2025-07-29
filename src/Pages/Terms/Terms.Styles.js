@@ -32,7 +32,7 @@ export const Header = styled.header`
 
 export const LogoWrapper = styled.div`
   display: flex;
-  margin-left: 10%;
+  margin-left: 1%;
 
   img {
     height: 150px;
@@ -60,7 +60,7 @@ export const NavLinks = styled.nav`
   justify-content: center;       
   background-color: white;
   width: 50%;
-  height: 50px;
+  height: 70px;
   position: absolute;           
   right: 0;                     
   top: 10;                        
@@ -99,6 +99,8 @@ export const ContentWrapper = styled.div`
 export const Title = styled.h1`
   font-size: 42px;
   margin-bottom: 20px;
+font-family: "Reddit Sans";
+
   text-align: center;
 justify-content:center;
   @media (max-width: 768px) {
@@ -110,7 +112,7 @@ export const SectionTitle = styled.h3`
   font-weight: 600;
   margin-top: 25px;
   margin-bottom: 20px;
-
+font-family: "Reddit Sans";
   @media (max-width: 768px) {
     font-size: 25PX;
   }
@@ -124,7 +126,13 @@ export const Paragraphs = styled.p`
   margin: 4px 0;
   justify-content:center;
   margin-bottom: 10px;
-
+color: #FFF;
+text-align: center;
+font-family: Lato;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+// line-height: normal;
   @media (max-width: 768px) {
     font-size: 20PX;
   }
@@ -134,6 +142,7 @@ export const Paragraph = styled.p`
  font-weight: 300;
   margin-bottom: 10px;
   line-height: 1.6;
+  font-family: Lato;
   @media (max-width: 768px) {
     font-size: 20px;
   }
@@ -142,6 +151,7 @@ export const Para = styled.p`
   font-size: 30px;
  font-weight: 300;
   margin-bottom: 10px;
+  font-family: Lato;
   // line-height: 1.6;
   @media (max-width: 768px) {
      font-size: 20px;

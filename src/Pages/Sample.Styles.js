@@ -69,6 +69,7 @@ export const Title = styled.h1`
   font-size: 20px;
   font-weight: bold;
   line-height: 1.4;
+  font-family:"Reddit sans";
 margin-top:80px;
 // margin-left:50px;
   @media (min-width: 768px) {
@@ -85,6 +86,7 @@ export const SubTitle = styled.h3`
   font-size: 18px;
   margin: 15px 0;
 // margin-left:50px;
+  font-family:"Lato";
   @media (min-width: 768px) {
     font-size: 22px;
   }
@@ -98,6 +100,7 @@ export const Description = styled.p`
   font-size: 16px;
   // max-width: 700px;
   line-height: 1.6;
+    font-family:"Lato";
   margin-bottom: 20px;
 // margin-left:50px;
   @media (min-width: 768px) {
@@ -113,7 +116,7 @@ export const CTAWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 20px;
+  // margin-top: 20px;
 // margin-left:70px;
   a {
     text-decoration: none;
@@ -189,7 +192,8 @@ export const HeroImage = styled.img`
     // margin-left: 10px;
   }
     @media (max-width: 468px) {
-    max-width: 150px;
+    max-width: 120px;
+    
         // margin-left: -10px;
   }
 `;
@@ -225,32 +229,6 @@ export const NavBar = styled.nav`
 `;
 
 
-// export const Logo = styled.img`
-//   height: 50px;
-// `;
-
-// export const NavLinks = styled.div`
-//   display: flex;
-//   gap: 7rem; 
-//   background-color: white;
-//   height: 60px;
-//   align-items: center;
-//   justify-content: flex-end;
-//   padding:5px;
-//   margin-left: auto; 
-//   padding-right: 30px 20px;  
-//   width: fit-content;
-// font-size:20px;
-//   a {
-//     text-decoration: none;
-//     color: #000;
-//     font-weight: 500;
-//   }
-
-//   @media (max-width: 768px) {
-//     display: none;
-//   }
-// `;
 
 
 export const MobileMenuIcon = styled.div`
@@ -280,82 +258,6 @@ export const MobileNavLinks = styled.div`
   }
 `;
 
-// export const GooglePlayButton = styled.a`
-//   display: flex;
-//   align-items: center;
-//   background-color: #0f9d58; /* Google Play green */
-//   color: white;
-//   padding: 10px 20px;
-//   border-radius: 8px;
-//   font-weight: 600;
-//   font-size: 14px;
-//   transition: 0.3s ease;
-
-//   img {
-//     height: 20px;
-//     margin-right: 10px;
-//   }
-
-//   &:hover {
-//     background-color: #0c7b44;
-//   }
-// `;
-
-// export const AppStoreButton = styled.a`
-//   display: flex;
-//   align-items: center;
-//   background-color: #0070c9; /* App Store blue */
-//   color: white;
-//   padding: 10px 20px;
-//   border-radius: 8px;
-//   font-weight: 600;
-//   font-size: 14px;
-//   transition: 0.3s ease;
-
-//   img {
-//     height: 20px;
-//     margin-right: 10px;
-//   }
-
-//   &:hover {
-//     background-color: #005fa3;
-//   }
-// `;
-
-// export const MobileRow = styled.div`
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   gap: 10px;
-//   flex-wrap: nowrap;
-
-//   @media (min-width: 768px) {
-//     display: none;
-//   }
-// `;
-
-// export const CTAWrapper = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   gap: 10px;
-
-//   @media (max-width: 767px) {
-//     flex-direction: column;
-//   }
-
-//   @media (min-width: 768px) {
-//     flex-direction: row;
-//     gap: 20px;
-//   }
-
-//   &.desktop-only {
-//     display: none;
-
-//     @media (min-width: 768px) {
-//       display: flex;
-//     }
-//   }
-// `;
 
 export const AppButtonBlack = styled.a`
   display: flex;
@@ -379,6 +281,9 @@ height:35%;
     color:white
   }
      @media (min-width: 769px) {
+  width:30%
+  }
+     @media (max-width: 769px) {
   width:50%
   }
      @media (max-width: 449px) {
@@ -411,6 +316,9 @@ height:35%;
     color:black;
   }
    @media (min-width: 769px) {
+  width:30%
+  }
+     @media (max-width: 769px) {
   width:50%
   }
      @media (max-width: 449px) {
@@ -420,14 +328,7 @@ height:35%;
   }
 `;
 
-// export const HeroImage = styled.img`
-//   width: 90px;
-//   height: auto;
 
-//   @media (min-width: 768px) {
-//     width: 150px;
-//   }
-// `;
 
 export const Header = styled.header`
   display: flex;
@@ -445,7 +346,7 @@ export const Header = styled.header`
 
 export const LogoWrapper = styled.div`
   display: flex;
-  margin-left: 10%;
+  // margin-left: 10%;
 
   img {
     height: 150px;
@@ -473,7 +374,7 @@ export const NavLinks = styled.nav`
   justify-content: center;       // horizontally center items inside the navbar
   background-color: white;
   width: 50%;
-  height: 50px;
+  height: 70px;
   position: absolute;            // place on right side
   right: 0;                      // align to the right
   top: 10;                        // stick to top (optional)
@@ -518,7 +419,8 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
   @media (max-width: 768px) {
-    font-size: 20px;
-    // padding: 60px 100px;
+    font-size: 12px;
+    font-weight: 200;
+    padding: 60px ;
   }
 `;
