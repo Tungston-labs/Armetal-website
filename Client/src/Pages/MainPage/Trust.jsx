@@ -1,47 +1,40 @@
-import React from "react";
+import React from 'react';
 import {
-  Container,
-  Title,
+  TrustedContainer,
+  HeadingWrapper,
+  Heading,
   LogosWrapper,
+  LogoItem,
   LogoImage,
-  Description
-} from "./Trust.Styles";
-import Contact from "./Contact"
-// Replace with actual image paths
-import logo from "../../assets/logo.svg";
-import msp from "../../assets/msp.svg";
-// import logo3 from "../../assets/logo3.svg";
-import stampede from "../../assets/stampede.svg";
-import thijara from "../../assets/thijara.svg";
+  Description,
+} from './Trust.Styles';
 
-const logos = [logo, msp, , stampede, thijara];
+import tungston from '../../assets/logo.svg';
+import stampede from '../../assets/stampede.svg';
+import thijara from '../../assets/thijara.svg';
+import msp from '../../assets/msp.svg';
 
 const TrustedSection = () => {
   return (
     <>
-    <Container>
-      <Title>
-        Trusted by <br />
-        Growing Teams & <br />
-        Enterprises Alike
-      </Title>
+    <TrustedContainer>
+      <HeadingWrapper>
+        <Heading>
+          Trusted by  Growing Teams <br /> & Enterprises Alike
+        </Heading>
+      </HeadingWrapper>
 
       <LogosWrapper>
-        {logos.map((logo, idx) => (
-          <LogoImage key={idx} src={logo} alt={`Logo ${idx + 1}`} />
-        ))}
+        <LogoItem><LogoImage src={tungston} alt="Tungston" /></LogoItem>
+        <LogoItem><LogoImage src={msp} alt="MSP" /></LogoItem>
+        <LogoItem><LogoImage src={stampede} alt="Stampede" /></LogoItem>
+        <LogoItem><LogoImage src={thijara} alt="Thijara" /></LogoItem>
       </LogosWrapper>
-
+</TrustedContainer>
       <Description>
-        Rekory isn’t just an HR tool—it’s your complete HR command center. From
-        recruitment to retirement, every feature is designed to save time,
-        reduce manual work, and boost team productivity. With a sleek interface,
-        powerful automation, and enterprise-level flexibility, Rekory transforms
-        complex HR tasks into effortless workflows—helping your business grow
-        faster, smarter, and stronger.
+        Rekory isn’t just an HR tool—it’s your complete HR command center. From recruitment to retirement, every feature is designed to save time, reduce manual work, and boost team productivity. With a sleek interface, powerful automation, and enterprise-level flexibility, Rekory transforms complex HR tasks into effortless workflows—helping your business grow faster, smarter, and stronger.
       </Description>
-    </Container>
-    <Contact />
+    
     </>
   );
 };

@@ -10,6 +10,7 @@ import {
   SectionTitle
 } from './Terms.Styles';
 import Terms2 from "./Terms2"
+import Terms3 from './Terms3';
 import { Link } from 'react-router-dom';
 import Contact from "../../Components/Footer/Footer"
 const TermsPage = () => {
@@ -58,17 +59,11 @@ const TermsPage = () => {
           reporting any unauthorized <br></br>access.
         </Paragraph>
 
-        <SectionTitle>Authorized Use</SectionTitle>
-        <Paragraph>
-        You are granted a non-transferable, limited license to use Rekory for internal HR operations.<br></br>
-        To comply with all relevant HR, employment, and data protection laws.<br></br>
-       To enter only accurate and lawful data.
-        </Paragraph>
-
         
       </ContentWrapper>
     </PageWrapper>
     <Terms2 />
+    <Terms3 />
     <Contact />
     </>
   );

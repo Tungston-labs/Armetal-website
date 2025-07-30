@@ -51,7 +51,7 @@ export const RightColumn = styled.div`
 export const Title = styled.h2`
   color: #FFF;
   font-family: "Reddit Sans";
-  font-size: 45px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
   line-height: 133.863%; /* 60.239px */
@@ -73,8 +73,8 @@ font-family: "Reddit Sans";
 `;
 
 export const Paragraph = styled.p`
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 1.5rem;
+  // line-height: 1.6;
   margin-bottom: 20px;
 font-family: "Lato";
 

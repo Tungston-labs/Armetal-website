@@ -1,80 +1,84 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Container = styled.div`
-  background: #2c2c2c;
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
+export const TrustedContainer = styled.section`
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #2C2C2C;
+  display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // text-align: center;
 
-  @media (min-width: 768px) {
-    padding: 80px 60px;
-  }
-
-  
-`;
-
-export const Title = styled.h2`
-  font-size: 50px;
-  font-weight: 700;
-//   margin-bottom: 40px;
-  text-align: left;
-font-family: "Reddit Sans";
-
-  @media (max-width: 768px) {
-    font-size: 24px;
+   @media (max-width: 768px) {
+    flex-direction: column; // stack heading above logos on mobile
     text-align: center;
   }
-     @media (min-width: 768px) {
-    // padding: 80px 60px;
-    font-size:35px;
+`;
+
+export const HeadingWrapper = styled.div`
+  // width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+  text-align: left;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+`;
+
+export const Heading = styled.h2`
+  font-size: 2.5rem;
+  font-family:Reddit Sans ;
+  // font-weight: 600;
+  line-height: 1.4;
+  color: white;
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
   }
 `;
 
 export const LogosWrapper = styled.div`
-  // display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  // gap: 70px;
-  margin-bottom: 80px;
-  // margin-top: -10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-items: center;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 40px;
 
-  @media (max-width: 480px) {
-    margin-top: 20px;
-    grid-template-columns: 1fr; 
+  @media (max-width: 576px) {
+    gap: 30px;
   }
+`;
 
-  @media (min-width: 768px) {
-    // margin-left: 18%;
-    margin-top: -20px;
-  }
+export const LogoItem = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 160px;
+  width: 100%;
 `;
 
 export const LogoImage = styled.img`
-  height: 80px;
+  width: 100%;
+  height: auto;
   object-fit: contain;
-  margin-left:4%;
-//  width: 50%;
-  @media (max-width: 480px) {
-    height: 40px;
-  }
-     @media (min-width: 768px) {
-    // padding: 80px ;
-    
-  }
+  filter: brightness(1.1);
 `;
 
 export const Description = styled.p`
-  max-width: 900px;
-  margin: 0 auto;
-  font-size: 20px;
+  // max-width: 900px;
+  background-color: #2C2C2C;
+  font-size: 1.5rem;
+  color: white;
+  
   line-height: 1.6;
-  font-weight: 400;
-font-family: "Reddit Sans";
-
-  @media (max-width: 768px) {
-    font-size: 14px;
-    padding: 0 10px;
-  }
-     @media (min-width: 768px) {
-    // padding: 80px;
+  text-align: center;
+    align-items: center;
+font-family: Lato;
+   @media (max-width: 768px) {
+    font-size: 1.2rem;
   }
 `;

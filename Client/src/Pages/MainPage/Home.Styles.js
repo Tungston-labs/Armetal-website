@@ -1,233 +1,341 @@
+// src/components/Home.Styles.js
 import styled from 'styled-components';
 
 export const HeroContainer = styled.section`
+  width: 100%;
+  min-height: 100vh;
+  // background: linear-gradient(to bottom, #001a4d, #002366);
+    background-image: url('/images/HOME.png'); /* place in public/images/HOME.png */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  padding: 20px 40px;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+`;
+
+export const Header = styled.header`
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  min-height: 80vh; 
-  padding: 80px 5% 40px; 
-background: url('/images/home.png') no-repeat center center;
-background-size: cover;
-color:white;
-  gap: 40px; 
-  overflow: hidden;
-  @media (min-width: 768px) {
-    flex-direction: row;
-    padding: 120px ;
-  }
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 10px 0;
 
-  @media (min-width: 1024px) {
-    // padding: 120px 10% 80px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
 `;
 
+export const LogoWrapper = styled.div`
+  display: flex;
+  margin-left: 1%;
+
+  img {
+    height: 150px;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    img {
+      height: 100px; // smaller logo for mobile
+    }
+  }
+`;
+
+
+
+export const NavLinks = styled.nav`
+  display: flex;
+  gap: 50px;
+  color: black;
+  align-items: center;          
+  justify-content: center;       
+  background-color: white;
+  width: 50%;
+  height: 70px;
+  position: absolute;           
+  right: 0;                     
+  top: 10;                        
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    position: static;
+  
+  }
+`;
+
+export const NavLink = styled.a`
+  color: black;
+  text-align: center;
+  font-size: 25px;
+    color: #273F8F;
+    font-weight:700;
+      font-family: "Reddit Sans";
+  font-weight: ${({ active }) => (active ? 'bold' : 'normal')};
+  text-decoration: ${({ active }) => (active ? 'underline' : 'none')};
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+   @media (max-width: 768px) {
+   }
+`;
+
+// export const Logo = styled.img`
+//   height: 8rem;
+//   width: auto;
+// `;
+
+// export const NavLinks = styled.nav`
+//   display: flex;
+//   gap: 2rem;
+// background:white;
+
+//   @media (max-width: 768px) {
+//     flex-direction: column;
+//     gap: 1rem;
+//     margin-top: 1rem;
+//   }
+// `;
+
+// export const NavLink = styled.a`
+//   color: black;
+//   text-decoration: none;
+//   font-size: 1rem;
+
+//   &:hover {
+//     text-decoration: underline;
+//   }
+// `;
 export const ContentWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  margin-top:5%;
+  // padding-top: 60px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    text-align: left;
+    gap: 40px;
+  }
+`;
+
+export const LeftContent = styled.div`
   flex: 1;
-  max-width: 800px; 
-  text-align: center; 
-//   margin-right:40px;
+  padding-right: 50px;
 
-  @media (min-width: 768px) {
-    text-align: center; 
-    margin-right: 40px;
-   
-  }
-    @media (min-width: 480px) {
-    text-align: center; 
-    margin-right: 40px;
-   
+  @media (max-width: 1024px) {
+    padding-right: 0;
   }
 `;
 
-export const Title = styled.h1`
-//   font-size: 31px;
-  line-height: 1.2;
+export const Heading = styled.h1`
+  font-size: 2.56rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+font-family: "Reddit Sans";
+
+  @media (max-width: 1024px) {
+    font-size: 2.4rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2.1rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 1.6rem;
+  }
+`;
+
+
+
+export const SubHeading = styled.h2`
+  font-size: 1.5rem;
+  font-weight: 300;
   margin-bottom: 20px;
-  font-weight: 700;
-// margin-left:-50px;
-  @media (min-width: 768px) {
-    font-size: 20px;
-  }
+font-family: "Reddit Sans";
 
-  @media (min-width: 1024px) {
-    font-size: 41px;
-    
-  }
-`;
-
-export const Subtitle = styled.p`
-  font-size: 20px;
-  margin-bottom: 30px;
-  color: var(--gray-text);
-// margin-left:-40px;
-
-  @media (min-width: 768px) {
-    font-size: 20px;
-    text-align: center; 
-  }
-
-    @media (min-width: 468px) {
-    font-size: 20px;
-    text-align: center; 
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
   }
 `;
 
 export const Description = styled.p`
-  font-size: 20px;
-  margin-bottom: 40px;
-  color: var(--gray-text);
-// margin-left:-40px;
-  @media (min-width: 768px) {
-    font-size: 20px;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-bottom: 30px;
+font-family: "Lato";
+ @media (max-width: 768px) {
+    font-size: 1.5rem;
   }
 `;
 
-// export const AppStoreButtons = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   gap: 15px;
-//   justify-content: center;
-//   align-items: center;
-
-//   @media (min-width: 768px) {
-//     flex-direction: row;
-//     justify-content: flex-start;
-//     align-items: flex-start;
-//     gap: 20px;
-//   }
-    
-// `;
-
-export const AppButton = styled.a`
+export const ButtonGroup = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 20px;
-  border-radius: 8px;
-  background-color: #333;
-  color: white;
-  font-size: 0.95em;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  width: 90%;               /* take most of the screen width on small screens */
-  max-width: 250px;
-
-  &:hover {
-    background-color: #555;
-  }
-
-  img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-
-    @media (max-width: 480px) {
-      margin-right: 6px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    width: auto;
-  }
-`;
-
-export const ImageWrapper = styled.div`
-  flex: 2; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  max-width: 600px;
-  width: 100%;
-
-  @media (max-width: 768px) {
-    padding: 0.5rem;
-    max-width: 100%;
-  }
-`;
-
-export const PhoneImage = styled.img`
-  width: 100%; 
-  max-width: 400px; 
-  height: auto;
-  object-fit: contain;
-  transform: scale(1.1) translateY(10px);
-  margin-left: 0;
-
-  @media (max-width: 768px) {
-    width: 90%;
-    max-width: 300px;
-    transform: scale(1) translateY(0);
-  }
-
-  @media (max-width: 480px) {
-    width: 100%;
-    max-width: 250px;
-    transform: scale(0.95) translateY(0);
-  }
-
-  @media (min-width: 1200px) {
-    max-width: 800px;
-  }
-`;
-export const MobileOnlyRowWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 20px;
-  margin-top: 30px;
-  width: 100%;
+  flex-wrap: wrap;
+`;
 
-  @media (min-width: 768px) {
-    display: none;
+export const StoreButton = styled.img`
+  height: 60px;
+  cursor: pointer;
+`;
+
+export const RightImageWrapper = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
   }
 `;
 
-export const MobileImageWrapper = styled.div`
-  max-width: 130px;
+export const MobileImage = styled.img`
+  max-width: 100%;
+  height: auto;
+  margin-top:-20%;
+  object-fit: contain;
+`;
+export const InfoSection = styled.section`
+  background-color: #242424;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  min-height: 200px;
+  margin-top:-20px;
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
 
   @media (max-width: 480px) {
-    max-width: 100px;
-  }
-`;
-
-export const DesktopImageWrapper = styled.div`
-  display: none;
-
-  @media (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 2;
     padding: 1rem;
-    max-width: 600px;
-    width: 100%;
   }
 `;
 
-/* Optional: hide desktop-only AppButtons on mobile */
-export const AppStoreButtons = styled.div`
+export const InfoText = styled.p`
+  max-width: 1200px;
+  font-size: 1.4rem;
+  // line-height: 1.7;
+  font-weight: 400;
+font-family: "Reddit Sans";
+
+  @media (max-width: 1024px) {
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.95rem;
+  }
+`;
+
+export const MissionVisionContainer = styled.section`
+  width: 100%;
+  // min-height: 100vh;
+  background-image: url('/images/mission.png'); // Replace with your background
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
+   @media (max-width: 768px) {
+      gap: 3rem;
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;
-  }
 
-  &.desktop-only {
-    display: none;
-
-    @media (min-width: 768px) {
-      display: flex;
-    }
   }
 `;
+
+export const CardRow = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: ${({ align }) =>
+    align === 'right' ? 'flex-end' : 'flex-start'};
+  width: 100%;
+padding-inline:5rem;
+  @media (max-width: 768px) {
+    justify-content: center;
+    padding-inline:0px;
+
+  }
+`;
+
+export const StatementCard = styled.div`
+  // background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  // border-radius: 16px;
+  padding: 4rem;
+  // max-width: 600px;
+  width: 47%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+         margin-top: ${({ top }) => (top === 'top' ? '-40px' : '0')};
+
+  &:hover {
+    transform: translateY(-5px);
+    background-color:white;
+    color:darkblue;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.5rem;
+    width:70%;
+    margin-top:0;
+  }
+`;
+
+export const Title = styled.h2`
+  font-size: 2.52rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+font-family: "Reddit Sans";
+
+  @media (max-width: 480px) {
+    font-size: 1.3rem;
+  }
+`;
+
+export const Descriptions = styled.p`
+  font-size: 1.4rem;
+  line-height: 1.6;
+  text-align: center;
+font-family: "Lato";
+
+  @media (max-width: 480px) {
+    font-size: 0.95rem;
+  }
+`;
+ 

@@ -100,34 +100,34 @@ export const ContentWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 42px;
+  font-size: 2.56rem;
   margin-bottom: 20px;
   text-align: center;
   color: #FFF;
 text-align: center;
 font-family: "Reddit Sans";
-font-size: 42px;
+// font-size: 42px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 justify-content:center;
   @media (max-width: 768px) {
-    font-size: 30px
+    font-size: 2rem;
 `;
 
 export const SectionTitle = styled.h3`
-  font-size: 35px;
+  font-size: 1.8rem;
   font-weight: 600;
   margin-top: 25px;
   margin-bottom: 20px;
 font-family: "Reddit Sans";
   @media (max-width: 768px) {
-    font-size: 25PX;
+    font-size: 1.4rem;
   }
 `;
 
 export const Paragraphs = styled.p`
-  font-size: 32px;
+  font-size: 1.6rem;
   align-item:center;
   text-align: center;
   margin-top:30px;
@@ -136,41 +136,41 @@ export const Paragraphs = styled.p`
   margin-bottom: 10px;
 color: #FFF;
 font-family: Lato;
-font-size: 32px;
+// font-size: 32px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
   @media (max-width: 768px) {
-    font-size: 20PX;
+    font-size: 1.2rem;
   }
 `;
 export const Paragraph = styled.p`
-  font-size: 30px;
+  font-size: 1.5rem;
  font-weight: 300;
   margin-bottom: 10px;
-  line-height: 1.6;
+  // line-height: 1.6;
   color: #FFF;
 font-family: Lato;
-font-size: 32px;
+// font-size: 32px;
 font-style: normal;
 // font-weight: 400;
 // line-height: normal;
   @media (max-width: 768px) {
-    font-size: 20px;
+    font-size: 1.2rem;
   }
 `;
 export const Para = styled.p`
-  font-size: 30px;
+  font-size: 1.5rem;
  font-weight: 300;
   margin-bottom: 10px;
-  line-height: 1.6;
+  // line-height: 1.6;
   color: #FFF;
 font-family: Lato;
-font-size: 32px;
+// font-size: 32px;
 font-style: normal;
 // font-weight: 400;
 // line-height: normal;
   @media (max-width: 768px) {
-     font-size: 20px;
+     font-size: 1.2rem;
   }
     `;

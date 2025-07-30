@@ -7,7 +7,7 @@ export const Container = styled.div`
   padding: 30px ;
   color: white;
   // height:100vh;
-  background-image: url('/images/sample.png');
+  background-image: url('/images/HOME.png');
  background-repeat: no-repeat;
     // background-attachment: fixed;
     background-size: cover;
@@ -43,7 +43,7 @@ export const SectionTitle = styled.h3`
   margin-bottom: 20px;
   color: #FFF;
 font-family: "Reddit Sans";
-font-size: 2rem;
+font-size: 1.5rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;

@@ -13,7 +13,7 @@ export const SectionTitle = styled.h2`
  margin-left:30px;
 color: #FFF;
 font-family: "Reddit Sans";
-font-size: 52px;
+  font-size: 2.4rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -89,11 +89,12 @@ export const FeatureCard = styled.div`
   }
 
   @media (max-width: 786px) {
-    width: 180px;
+    width: 250px;
+    
 
     font-size: 14px;
     // flex-direction: column; 
-    text-align: center;
+    // text-align: center;
   }
 `;
 
@@ -125,7 +126,7 @@ font-family: "Reddit Sans";
   ;
    color: white;
 font-family: "Reddit Sans";
-font-size: 30px;
+font-size: 25px;
 font-style: normal;
 font-weight: 800;
 // line-height: 140.754%;
@@ -157,6 +158,15 @@ export const CardImage = styled.img`
   
   object-fit: contain;
   margin-bottom: 16px;
+
+   @media (max-width: 786px) {
+    width: 5rem;
+    
+
+    font-size: 14px;
+    // flex-direction: column; 
+    // text-align: center;
+  }
 `;
 
 export const CardTitle = styled.div`
@@ -168,7 +178,7 @@ export const CardTitle = styled.div`
 font-family: "Reddit Sans";
 
   @media (max-width: 600px) {
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
   }
 `;
@@ -181,7 +191,7 @@ export const CardDescription = styled.p`
 font-family: "Lato";
 
   @media (max-width: 600px) {
-    font-size: 12px;
+    font-size: 16px;
   }
 `;
 

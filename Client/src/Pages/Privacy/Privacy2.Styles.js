@@ -43,13 +43,13 @@ export const SectionTitle = styled.h3`
   margin-bottom: 20px;
   color: #FFF;
 font-family: "Reddit Sans";
-font-size: 35px;
+font-size: 2rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 
   @media (max-width: 768px) {
-    font-size: 25PX;
+    font-size: 1.4rem;
   }
 `;
 
@@ -59,12 +59,12 @@ export const Text = styled.p`
   color: #FFF;
 
 font-family: Lato;
-font-size: 32px;
+font-size: 1.5rem;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
 
 @media (max-width: 768px) {
-    font-size: 20PX;
+    font-size: 1.2rem;
   }
 `;

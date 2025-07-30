@@ -10,6 +10,7 @@ import {
   SectionTitle
 } from './Privacy.Styles';
 import Privacy2 from "./Privacy2"
+import Privacy3 from "./Privacy3"
 import Contact from "../../Components/Footer/Footer"
 import { Link } from 'react-router-dom';
 const Privacy = () => {
@@ -38,8 +39,8 @@ const Privacy = () => {
         <Title>Privacy Policy for Rekory: Your Data, Fully Secured, Never Shared</Title>
         <Paragraphs>
          At Rekory, we value your trust. This Privacy Policy explains how we collect, use, and safeguard your data when you use
-         <br></br> our Human Resource Management (HRM) app, available on iOS and Android. Our core promise: your data stays private 
-         <br></br>and secure — always stored in our own facilities, never shared with third parties.
+         our Human Resource Management (HRM) app, available on iOS and Android. Our core promise: your data stays private 
+         and secure — always stored in our own facilities, never shared with third parties.
         </Paragraphs>
 
         <SectionTitle>What We Collect</SectionTitle>
@@ -61,7 +62,7 @@ const Privacy = () => {
           Support You Better: Solve issues quickly and offer guidance when needed.
         </Para>
 
-     <SectionTitle>Where & How We Store It</SectionTitle>
+     {/* <SectionTitle>Where & How We Store It</SectionTitle>
         <Paragraph>
           In-House Data Storage: All your data is stored in Rekory's own secure facilities — no third-party cloud services.<br></br>
           Zero Data Sharing: We never sell, rent, or share your data. Period.<br></br>
@@ -71,19 +72,20 @@ const Privacy = () => {
           Bank-grade AES-256 encryption for all data, in transit and at rest.<br></br>
           Role-based internal access with full monitoring.<br></br>
           Regular security audits and backup protocols.<br></br>
-        </Paragraph>
+        </Paragraph> */}
 
-        <SectionTitle>Your Rights</SectionTitle>
+        {/* <SectionTitle>Your Rights</SectionTitle>
         <Paragraph>
        Access & Update: View and edit your data anytime within the app.<br></br>
 Portability: Request a downloadable copy of your data.<br></br>
  Delete: You can ask to delete your account, subject to legal requirements.
-        </Paragraph>
+        </Paragraph> */}
 
         
       </ContentWrapper>
     </PageWrapper>
     <Privacy2 />
+    <Privacy3 />
     <Contact />
     </>
   );
