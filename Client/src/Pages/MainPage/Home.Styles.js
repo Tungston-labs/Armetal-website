@@ -43,7 +43,7 @@ export const LogoWrapper = styled.div`
   @media (max-width: 768px) {
     justify-content: center;
     margin-left: 0;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
 
     img {
@@ -68,11 +68,8 @@ export const NavLinks = styled.nav`
   top: 10;                        
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    position: static;
+   
+  display:none;
   
   }
 `;
@@ -80,7 +77,7 @@ export const NavLinks = styled.nav`
 export const NavLink = styled.a`
   color: black;
   text-align: center;
-  font-size: 25px;
+  font-size: 24px;
     color: #273F8F;
     font-weight:700;
       font-family: "Reddit Sans";
@@ -93,9 +90,46 @@ export const NavLink = styled.a`
   }
 
    @media (max-width: 768px) {
+     font-size: 12px;
+     
    }
 `;
 
+
+export const HamburgerIcon = styled.div`
+  display: none;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1001;
+  cursor: pointer;
+  color: #white;
+
+  @media (max-width: 768px) {
+    display: block;j
+  }
+`;
+
+export const MobileMenu = styled.div`
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  z-index: 1000;
+  
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;
 // export const Logo = styled.img`
 //   height: 8rem;
 //   width: auto;

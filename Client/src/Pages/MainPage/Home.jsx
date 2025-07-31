@@ -1,5 +1,5 @@
 // src/components/HeroSection.jsx
-import React from 'react';
+import React,{useState} from 'react';
 import {
   HeroContainer,
   // NavBar,
@@ -18,7 +18,7 @@ import {
   MissionVisionContainer,
   StatementCard,
   CardRow,
-   StoreButton,
+   StoreButton, HamburgerIcon, MobileMenu,
   RightImageWrapper,
   MobileImage, InfoSection, InfoText
 } from './Home.Styles';
@@ -26,6 +26,7 @@ import Features from "./Features"
 import Contact from "./Contact"
 import { Link } from 'react-router-dom';
 const HeroSection = () => {
+    const [isOpen, setIsOpen] = useState(false);
   return (
     <>
     <HeroContainer>
@@ -39,12 +40,24 @@ const HeroSection = () => {
 </LogoWrapper>
 
 
-<NavLinks>
-  <NavLink to="/" as={Link} active>Home</NavLink>
-  <NavLink to="/terms" as={Link} >Terms and Conditions</NavLink>
-  <NavLink to="/privacy" as={Link}>Privacy and Policy</NavLink>
-</NavLinks>
-</Header>
+ <HamburgerIcon onClick={() => setIsOpen(!isOpen)}>
+        ☰
+      </HamburgerIcon>
+
+      <NavLinks className="desktop-menu">
+        <NavLink to="/" as={Link} active>Home</NavLink>
+        <NavLink to="/terms" as={Link}>Terms and Conditions</NavLink>
+        <NavLink to="/privacy" as={Link}>Privacy and Policy</NavLink>
+      </NavLinks>
+
+      {isOpen && (
+        <MobileMenu>
+          <NavLink to="/" as={Link} onClick={() => setIsOpen(false)}>Home</NavLink>
+          <NavLink to="/terms" as={Link} onClick={() => setIsOpen(false)}>Terms and Conditions</NavLink>
+          <NavLink to="/privacy" as={Link} onClick={() => setIsOpen(false)}>Privacy and Policy</NavLink>
+        </MobileMenu>
+ )}
+        </Header>
 
       <ContentWrapper>
         <LeftContent>

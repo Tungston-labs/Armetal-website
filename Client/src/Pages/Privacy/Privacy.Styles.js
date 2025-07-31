@@ -41,7 +41,7 @@ export const LogoWrapper = styled.div`
   @media (max-width: 768px) {
     justify-content: center;
     margin-left: 0;
-    margin-top: 10px;
+    margin-top: 25px;
     margin-bottom: 10px;
 
     img {
@@ -66,11 +66,7 @@ export const NavLinks = styled.nav`
   top: 10;                        // stick to top (optional)
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    position: static;
+   display:none;
   }
 `;
 
@@ -88,6 +84,11 @@ export const NavLink = styled.a`
   &:hover {
     text-decoration: underline;
   }
+
+   @media (max-width: 768px) {
+     font-size: 12px;
+     
+   }
 `;
 export const ContentWrapper = styled.div`
   margin-top: 40px;
@@ -174,3 +175,38 @@ font-style: normal;
      font-size: 1.2rem;
   }
     `;
+
+     export const HamburgerIcon = styled.div`
+  display: none;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1001;
+  cursor: pointer;
+  color: #white;
+
+  @media (max-width: 768px) {
+    display: block;j
+  }
+`;
+
+export const MobileMenu = styled.div`
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  z-index: 1000;
+  
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;

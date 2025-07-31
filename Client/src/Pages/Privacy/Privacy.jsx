@@ -1,8 +1,8 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {
   PageWrapper,
   Header,Para,
-  NavLinks,
+  NavLinks,HamburgerIcon,MobileMenu,
   NavLink,LogoWrapper,
   ContentWrapper,
   Title,Paragraphs,
@@ -11,9 +11,11 @@ import {
 } from './Privacy.Styles';
 import Privacy2 from "./Privacy2"
 import Privacy3 from "./Privacy3"
-import Contact from "../../Components/Footer/Footer"
 import { Link } from 'react-router-dom';
+import Contact from "../../Components/Footer/Footer"
 const Privacy = () => {
+       const [isOpen, setIsOpen] = useState(false);
+  
   return (
   <>
     <PageWrapper>
@@ -25,13 +27,22 @@ const Privacy = () => {
     className="logo-image"
   />
 </LogoWrapper>
-
+ <HamburgerIcon onClick={() => setIsOpen(!isOpen)}>
+        ☰
+      </HamburgerIcon>
 
  <NavLinks>
   <NavLink to="/" as={Link}>Home</NavLink>
   <NavLink to="/terms" as={Link} >Terms and Conditions</NavLink>
   <NavLink to="/privacy" as={Link} active>Privacy and Policy</NavLink>
 </NavLinks>
+{isOpen && (
+        <MobileMenu>
+          <NavLink to="/" as={Link} onClick={() => setIsOpen(false)}>Home</NavLink>
+          <NavLink to="/terms" as={Link} onClick={() => setIsOpen(false)}>Terms and Conditions</NavLink>
+          <NavLink to="/privacy" as={Link} onClick={() => setIsOpen(false)}>Privacy and Policy</NavLink>
+        </MobileMenu>
+ )}
 </Header>
 
 

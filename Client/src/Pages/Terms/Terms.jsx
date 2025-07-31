@@ -1,8 +1,8 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {
   PageWrapper,
   Header,Para,
-  NavLinks,
+  NavLinks,HamburgerIcon, MobileMenu,
   NavLink,LogoWrapper,
   ContentWrapper,
   Title,Paragraphs,
@@ -14,6 +14,7 @@ import Terms3 from './Terms3';
 import { Link } from 'react-router-dom';
 import Contact from "../../Components/Footer/Footer"
 const TermsPage = () => {
+     const [isOpen, setIsOpen] = useState(false);
   return (
   <>
     <PageWrapper>
@@ -25,13 +26,22 @@ const TermsPage = () => {
     className="logo-image"
   />
 </LogoWrapper>
-
+ <HamburgerIcon onClick={() => setIsOpen(!isOpen)}>
+        ☰
+      </HamburgerIcon>
 
 <NavLinks>
   <NavLink to="/" as={Link}>Home</NavLink>
   <NavLink to="/terms" as={Link} active>Terms and Conditions</NavLink>
   <NavLink to="/privacy" as={Link}>Privacy and Policy</NavLink>
 </NavLinks>
+{isOpen && (
+        <MobileMenu>
+          <NavLink to="/" as={Link} onClick={() => setIsOpen(false)}>Home</NavLink>
+          <NavLink to="/terms" as={Link} onClick={() => setIsOpen(false)}>Terms and Conditions</NavLink>
+          <NavLink to="/privacy" as={Link} onClick={() => setIsOpen(false)}>Privacy and Policy</NavLink>
+        </MobileMenu>
+ )}
 </Header>
 
 
