@@ -94,7 +94,7 @@ const ContactForm = () => {
             responses to help you take the next step with confidence. Your inquiry matters to us,
             and we look forward to assisting you.
           </Paragraph>
-          <h1 style={{ fontSize: "Reddit Sans" }}>Download the app now!</h1>
+          <h1  className="hide-on-mobile" style={{ fontSize: "Reddit Sans" }}>Download the app now!</h1>
           <AppStoreButtons className="desktop-only">
             <AppButton href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
               <img src="/images/play.png" alt="Get it on Google Play" />

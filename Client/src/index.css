@@ -75,3 +75,13 @@ button:focus-visible {
     box-sizing: border-box;
   }
  
+/* styles.css */
+.hide-on-mobile {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}

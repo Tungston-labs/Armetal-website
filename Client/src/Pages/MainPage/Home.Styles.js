@@ -105,7 +105,7 @@ export const HamburgerIcon = styled.div`
   right: 20px;
   z-index: 1001;
   cursor: pointer;
-  color: #white;
+  color: white;
 
   @media (max-width: 768px) {
     display: block;j
