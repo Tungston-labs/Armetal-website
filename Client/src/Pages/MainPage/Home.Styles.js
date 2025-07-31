@@ -194,12 +194,12 @@ font-family: "Reddit Sans";
   }
 
   @media (max-width: 480px) {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 
-  @media (max-width: 360px) {
-    font-size: 1.6rem;
-  }
+  // @media (max-width: 360px) {
+  //   font-size: 1.6rem;
+  // }
 `;
 
 
@@ -213,6 +213,9 @@ font-family: "Reddit Sans";
   @media (max-width: 768px) {
     font-size: 1.5rem;
   }
+      @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Description = styled.p`
@@ -222,6 +225,10 @@ export const Description = styled.p`
 font-family: "Lato";
  @media (max-width: 768px) {
     font-size: 1.5rem;
+  }
+    
+    @media (max-width: 480px) {
+    font-size: 0.9rem;
   }
 `;
 
@@ -234,6 +241,10 @@ export const ButtonGroup = styled.div`
 export const StoreButton = styled.img`
   height: 60px;
   cursor: pointer;
+
+    @media (max-width: 480px) {
+      height: 40px;
+  }
 `;
 
 export const RightImageWrapper = styled.div`
@@ -288,7 +299,7 @@ font-family: "Reddit Sans";
   }
 
   @media (max-width: 480px) {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 `;
 
@@ -345,7 +356,7 @@ export const StatementCard = styled.div`
 
   @media (max-width: 480px) {
     padding: 1.5rem;
-    width:70%;
+    width:90%;
     margin-top:0;
   }
 `;
@@ -358,7 +369,7 @@ export const Title = styled.h2`
 font-family: "Reddit Sans";
 
   @media (max-width: 480px) {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -369,7 +380,7 @@ export const Descriptions = styled.p`
 font-family: "Lato";
 
   @media (max-width: 480px) {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 `;
  

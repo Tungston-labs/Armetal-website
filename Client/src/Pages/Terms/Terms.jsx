@@ -48,8 +48,8 @@ const TermsPage = () => {
       <ContentWrapper>
         <Title>Terms & Conditions – Rekory HRM App</Title>
         <Paragraphs>
-          These Terms govern your use of the Rekory HRM app and ensure a <br></br>smooth, secure, and transparent
-          HR management experience for<br></br> your organization.
+          These Terms govern your use of the Rekory HRM app and ensure a smooth, secure, and transparent
+          HR management experience for your organization.
         </Paragraphs>
 
         <SectionTitle>Acceptance of Terms</SectionTitle>

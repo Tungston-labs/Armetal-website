@@ -36,6 +36,9 @@ export const Heading = styled.h2`
   @media (max-width: 768px) {
     font-size: 1.8rem;
   }
+      @media (max-width: 468px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const LogosWrapper = styled.div`
@@ -51,6 +54,10 @@ export const LogosWrapper = styled.div`
   @media (max-width: 576px) {
     gap: 30px;
   }
+
+   @media (max-width: 486px) {
+    gap: 10px;
+  }
 `;
 
 export const LogoItem = styled.div`
@@ -59,6 +66,10 @@ export const LogoItem = styled.div`
   align-items: center;
   max-width: 160px;
   width: 100%;
+
+   @media (max-width: 476px) {
+    width:6rem;
+  }
 `;
 
 export const LogoImage = styled.img`
@@ -80,6 +91,10 @@ export const Description = styled.p`
 font-family: Lato;
    @media (max-width: 768px) {
     font-size: 1.2rem;
+  }
+      @media (max-width: 480px) {
+    font-size: 0.9rem;
+    margin-top:-30px;
   }
 `;
 

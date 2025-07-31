@@ -108,6 +108,10 @@ font-family: "Reddit Sans";
 justify-content:center;
   @media (max-width: 768px) {
     font-size: 2rem;
+}
+      @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const SectionTitle = styled.h3`
@@ -118,6 +122,9 @@ export const SectionTitle = styled.h3`
 font-family: "Reddit Sans";
   @media (max-width: 768px) {
     font-size: 25PX;
+  }
+      @media (max-width: 480px) {
+    font-size: 1rem;
   }
 `;
 
@@ -138,6 +145,9 @@ font-weight: 400;
   @media (max-width: 768px) {
     font-size: 1.2rem;
   }
+      @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
 `;
 export const Paragraph = styled.p`
   font-size: 1.5rem;
@@ -148,6 +158,9 @@ export const Paragraph = styled.p`
   @media (max-width: 768px) {
     font-size: 1.2rem;
   }
+      @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
 `;
 export const Para = styled.p`
   font-size: 1.5rem;
@@ -157,6 +170,9 @@ export const Para = styled.p`
   // line-height: 1.6;
   @media (max-width: 768px) {
      font-size: 1.2rem;
+  }
+       @media (max-width: 480px) {
+    font-size: 0.9rem;
   }
     `;
 

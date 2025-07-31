@@ -51,6 +51,9 @@ line-height: normal;
   @media (max-width: 768px) {
     font-size: 25PX;
   }
+      @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Text = styled.p`
@@ -65,5 +68,8 @@ line-height: normal;
 
 @media (max-width: 768px) {
     font-size: 1.2rem;
+  }
+      @media (max-width: 480px) {
+    font-size: 0.9rem;
   }
 `;

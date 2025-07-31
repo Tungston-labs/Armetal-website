@@ -133,6 +133,9 @@ line-height: normal;
      @media (max-width: 768px) {
     font-size: 1.2rem;
   }
+      @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
 `;
 export const Icon = styled.span`
   font-size: 18px;

@@ -65,7 +65,7 @@ const Privacy = () => {
         </Paragraph>
 
         <SectionTitle>Why We Collect It</SectionTitle>
-<h1>We use your data to:</h1>
+<h4>We use your data to:</h4>
         <Para>
           Power Core HR Features: Like attendance tracking, payroll, performance reviews, and recruitment.<br></br>
           Simplify Onboarding: Bulk-upload employees, create accounts, and email login info automatically.<br>
