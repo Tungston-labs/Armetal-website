@@ -11,10 +11,12 @@ import Sample from "./Pages/MainPage/Sample"
 import Trust from "./Pages/MainPage/Trust"
 import Contact from "./Pages/MainPage/Contact"
 import Privacy from "./Pages/Privacy/Privacy"
+import ScrollToTop from "./Components/ScrollToTop";
 // import Website from "./Pages/Website"
 function App() {
   return (
     <>
+    <ScrollToTop />
       <Routes>
 <Route path="/" element={<Home/> }/>
 <Route path="/home" element={<Home />} />
