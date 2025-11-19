@@ -50,14 +50,16 @@ export const NavLinks = styled.ul`
   padding: 0;
   margin: 20px 0;
 color:white;
+
+ 
    @media (max-width: 768px) {
-    gap: 24px;
-    flex-direction: column;
+    gap: 30px;
     align-items: center;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     gap: 16px;
+    flex-direction: column;
   }
 `;
 
@@ -81,7 +83,12 @@ line-height: normal;
     text-decoration: underline;
     color: #1a73e8;
   }
-
+    @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+@media (max-width: 768px) {
+    font-size: 16px;
+  }
   @media (max-width: 480px) {
     font-size: 14px;
   }
@@ -100,12 +107,19 @@ display: inline-flex;
 justify-content: center;
 align-items: center;
 gap: 43px;
+
+
+ @media (max-width: 1024px) {
+    // flex-direction: column;
+    gap: 20px;
+  }
+
  @media (max-width: 768px) {
     flex-direction: column;
     gap: 20px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     gap: 16px;
   }
 `;
@@ -124,14 +138,16 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
  
-  @media (min-width: 768px) {
+  @media (max-width: 1024px) {
     flex-direction: row;
     text-align: left;
     gap: 12px;
-    font-size: 18px;
+    font-size: 16px;
   }
      @media (max-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1rem;
+      flex-direction: row;
+  
   }
       @media (max-width: 480px) {
     font-size: 0.9rem;

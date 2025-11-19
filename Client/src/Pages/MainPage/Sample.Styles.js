@@ -77,7 +77,7 @@ margin-top:80px;
   }
 
   @media (min-width: 1024px) {
-    font-size: 45px;
+    font-size: 40px;
     margin-left:80px;
   }
 `;

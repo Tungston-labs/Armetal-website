@@ -17,7 +17,12 @@ font-family: "Reddit Sans";
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+
   @media (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 480px) {
     font-size: 20px;
   }
 `;
@@ -37,7 +42,7 @@ export const ScrollContainer = styled.div`
   display: flex;
   overflow-x: auto;
   gap: 20px;
-  padding: 30px 460px; /* Pushes cards to overlap with TransparentCard */
+  padding: 30px 0px;
   scrollbar-width: none;
   position: relative;
 
@@ -90,11 +95,17 @@ export const FeatureCard = styled.div`
 
   @media (max-width: 786px) {
     width: 250px;
-    
+     min-height: 200px;
 
     font-size: 14px;
     // flex-direction: column; 
     // text-align: center;
+  }
+     @media (max-width: 600px) {
+    min-height: 200px;
+  }
+        @media (max-width: 1024px) {
+    min-height: 350px;
   }
 `;
 
@@ -106,8 +117,6 @@ export const TransparentCard = styled.div`
   min-height: 450px;
 background: rgba(8, 43, 141, 0.2);
   backdrop-filter: blur(10px);
-  // border: 2px dashed #ccc;
-  // border-radius: 12px;
   padding: 20px;
 font-family: "Reddit Sans";
 
@@ -142,6 +151,17 @@ font-weight: 800;
     line-height: 1.6;
     margin: 0;
   }
+ @media (max-width: 1024px) {
+font-family: "Reddit Sans";
+font-size: 1.3rem;
+font-style: normal;
+font-weight: 800;
+  }
+ @media (max-width: 1024px) {
+    width: 350px;
+    // padding: 16px;
+  }
+
   @media (max-width: 768px) {
     display: none;
     // width: 200px;
@@ -178,8 +198,14 @@ export const CardTitle = styled.div`
 font-family: "Reddit Sans";
 
   @media (max-width: 600px) {
-    font-size: 18px;
-    text-align: center;
+    font-size: 1rem;
+    // text-align: center;
+  }
+    @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+     @media (max-width: 1024px) {
+    font-size: 1.2rem;
   }
 `;
 
@@ -190,8 +216,14 @@ export const CardDescription = styled.p`
   margin: 0;
 font-family: "Lato";
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     font-size: 16px;
+  }
+     @media (max-width: 600px) {
+    font-size: 0.8rem;
+  }
+       @media (max-width: 1024px) {
+    font-size: 1rem;
   }
 `;
 

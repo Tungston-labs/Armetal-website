@@ -61,30 +61,37 @@ font-family: "Reddit Sans";
   span {
     color: #fff;
   }
-
+ @media (max-width: 1024px) {
+    font-size: 1.4rem;
+  
+  }
   @media (max-width: 768px) {
     font-size: 32px;
     text-align: center;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     font-size: 24px;
   }
 `;
 
 export const Paragraph = styled.p`
   font-size: 1.5rem;
-  // line-height: 1.6;
+  line-height: 1.3;
   margin-bottom: 20px;
 font-family: "Lato";
+
+@media (max-width: 1024px) {
+    font-size: 16px;
+  }
 
   @media (max-width: 768px) {
     font-size: 16px;
     text-align: center;
   }
 
-  @media (max-width: 480px) {
-    font-size: 15px;
+  @media (max-width: 600px) {
+    font-size: 0.8rem;
   }
 `;
 
@@ -183,6 +190,7 @@ export const AppStoreButtons = styled.div`
   justify-content: center;
   align-items: center;
 margin-top:10px;
+
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: flex-start;

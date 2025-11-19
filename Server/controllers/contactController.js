@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer");
 
 exports.sendContactEmail = async (req, res) => {
-  const { firstName, lastName, company, email, size, source, message } = req.body;
+  const { firstName, company, email, size, source, message } = req.body;
 
   const transporter = nodemailer.createTransport({
     service: "Gmail", // or use SMTP if you have one
@@ -14,10 +14,10 @@ exports.sendContactEmail = async (req, res) => {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: process.env.EMAIL_USER,
-    subject: `New Contact Form Submission - REKORY ${firstName} ${lastName}`,
+    subject: `New Contact Form Submission - REKORY ${firstName}`,
     html: `
     <h3>New Enquiry Received:</h3>
-      <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+      <p><strong>Name:</strong> ${firstName}</p>
       <p><strong>Company:</strong> ${company}</p>
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Company Size:</strong> ${size}</p>

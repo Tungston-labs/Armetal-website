@@ -2,7 +2,6 @@ const transporter = require("../config/mailConfig");
 
 const sendContactMail = async ({
   firstName,
-  lastName,
   company,
   email,
   companySize,
@@ -16,7 +15,6 @@ const sendContactMail = async ({
     html: `
       <h3>New Enquiry Received:</h3>
       <p><strong>First Name:</strong> ${firstName}</p>
-      <p><strong>Last Name:</strong> ${lastName}</p>
       <p><strong>Company:</strong> ${company}</p>
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Company Size:</strong> ${companySize}</p>

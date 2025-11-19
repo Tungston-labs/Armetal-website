@@ -33,6 +33,9 @@ export const Heading = styled.h2`
   line-height: 1.4;
   color: white;
 
+  @media (max-width: 1024px) {
+    font-size: 1.8rem;
+  }
   @media (max-width: 768px) {
     font-size: 1.8rem;
   }
@@ -89,8 +92,12 @@ export const Description = styled.p`
   text-align: center;
     align-items: center;
 font-family: Lato;
-   @media (max-width: 768px) {
+
+  @media (max-width: 1024px) {
     font-size: 1.2rem;
+  }
+   @media (max-width: 768px) {
+    font-size: 1rem;
   }
       @media (max-width: 480px) {
     font-size: 0.9rem;

@@ -20,7 +20,6 @@ import Swal from 'sweetalert2';
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
-    lastName: "",
     company: "",
     email: "",
     size: "",
@@ -61,7 +60,6 @@ const ContactForm = () => {
 
     setFormData({
       firstName: "",
-      lastName: "",
       company: "",
       email: "",
       size: "",
@@ -109,10 +107,7 @@ const ContactForm = () => {
 
         <RightColumn>
           <Form onSubmit={handleSubmit}>
-            <Row>
-              <Input name="firstName" value={formData.firstName} onChange={handleChange} autoComplete="off" placeholder="First Name" />
-              <Input name="lastName" value={formData.lastName} onChange={handleChange} autoComplete="off" placeholder="Last Name" />
-            </Row>
+              <Input name="firstName" value={formData.firstName} onChange={handleChange} autoComplete="off" placeholder=" Name" />
             <Input name="company" value={formData.company} onChange={handleChange} autoComplete="off" placeholder="Company" />
             <Input name="email" value={formData.email} onChange={handleChange} autoComplete="off" placeholder="Company E-mail" />
             <Input name="size" value={formData.size} onChange={handleChange}autoComplete="off" placeholder="Company size" />

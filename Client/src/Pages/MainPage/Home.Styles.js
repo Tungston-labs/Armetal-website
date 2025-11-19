@@ -67,10 +67,9 @@ export const NavLinks = styled.nav`
   right: 0;                     
   top: 10;                        
 
+
   @media (max-width: 768px) {
-   
   display:none;
-  
   }
 `;
 
@@ -88,10 +87,14 @@ export const NavLink = styled.a`
   &:hover {
     text-decoration: underline;
   }
-
+     @media (max-width: 1440px) {
+     font-size: 1.2rem;    
+   }
+  @media (max-width: 1024px) {
+     font-size: 1rem;    
+   }
    @media (max-width: 768px) {
-     font-size: 12px;
-     
+     font-size: 12px;    
    }
 `;
 
@@ -185,12 +188,15 @@ export const Heading = styled.h1`
   margin-bottom: 10px;
 font-family: "Reddit Sans";
 
+ @media (max-width: 1440px) {
+    font-size: 1.8rem;
+  }
   @media (max-width: 1024px) {
-    font-size: 2.4rem;
+    font-size: 1.3rem;
   }
 
   @media (max-width: 768px) {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
   }
 
   @media (max-width: 480px) {
@@ -220,16 +226,22 @@ font-family: "Reddit Sans";
 
 export const Description = styled.p`
   font-size: 1.2rem;
-  line-height: 1.2;
+  line-height: 1.4;
   margin-bottom: 30px;
 font-family: "Lato";
+
  @media (max-width: 768px) {
     font-size: 1.5rem;
-  }
-    
+  }  
     @media (max-width: 480px) {
     font-size: 0.9rem;
   }
+     @media (max-width: 1024px) {
+    font-size: 1rem;
+  }  
+       @media (max-width: 1440px) {
+    font-size: 1.3rem;
+  }  
 `;
 
 export const ButtonGroup = styled.div`
@@ -242,6 +254,9 @@ export const StoreButton = styled.img`
   height: 60px;
   cursor: pointer;
 
+  @media (max-width: 768px) {
+      height: 50px;
+  }
     @media (max-width: 480px) {
       height: 40px;
   }
@@ -260,7 +275,7 @@ export const RightImageWrapper = styled.div`
 export const MobileImage = styled.img`
   max-width: 100%;
   height: auto;
-  margin-top:-20%;
+  margin-top:-10%;
   object-fit: contain;
 `;
 export const InfoSection = styled.section`
@@ -335,14 +350,11 @@ padding-inline:5rem;
 `;
 
 export const StatementCard = styled.div`
-  // background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
-  // border-radius: 16px;
   padding: 4rem;
-  // max-width: 600px;
   width: 47%;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
@@ -353,7 +365,16 @@ export const StatementCard = styled.div`
     background-color:white;
     color:darkblue;
   }
-
+    @media (max-width: 1024px) {
+    padding: 1rem;
+    width:60%;
+    margin-top:15px;
+  }
+@media (max-width: 768px) {
+    padding: 1.5rem;
+    width:60%;
+    margin-top:0;
+  }
   @media (max-width: 480px) {
     padding: 1.5rem;
     width:90%;
@@ -368,8 +389,14 @@ export const Title = styled.h2`
   text-align: center;
 font-family: "Reddit Sans";
 
-  @media (max-width: 480px) {
+@media (max-width: 1024px) {
     font-size: 1.2rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1rem;
   }
 `;
 
@@ -379,8 +406,14 @@ export const Descriptions = styled.p`
   text-align: center;
 font-family: "Lato";
 
-  @media (max-width: 480px) {
+ @media (max-width: 1024px) {
     font-size: 1rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
   }
 `;
  
