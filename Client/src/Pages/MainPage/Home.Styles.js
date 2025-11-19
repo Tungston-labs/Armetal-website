@@ -228,20 +228,20 @@ export const Description = styled.p`
   font-size: 1.2rem;
   line-height: 1.4;
   margin-bottom: 30px;
-font-family: "Lato";
+  font-family: "Lato";
 
- @media (max-width: 768px) {
-    font-size: 1.5rem;
-  }  
-    @media (max-width: 480px) {
+  @media (max-width: 600px) {
     font-size: 0.9rem;
   }
-     @media (max-width: 1024px) {
+
+  @media (min-width: 768px)and (max-width:1023px) {
     font-size: 1rem;
-  }  
-       @media (max-width: 1440px) {
-    font-size: 1.3rem;
-  }  
+  }
+
+  @media (min-width: 1024px) and (max-width:1439px) {
+    font-size: 1.2rem;
+  }
+
 `;
 
 export const ButtonGroup = styled.div`
