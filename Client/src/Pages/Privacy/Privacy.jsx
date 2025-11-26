@@ -1,18 +1,17 @@
 import React,{useState} from 'react';
 import {
   PageWrapper,
-  Header,Para,
-  NavLinks,HamburgerIcon,MobileMenu,
-  NavLink,LogoWrapper,
+  Header,
+ HamburgerIcon,MobileMenu,
+ LogoWrapper,
   ContentWrapper,
-  Title,Paragraphs,
-  Paragraph,
-  SectionTitle
 } from './Privacy.Styles';
 import Privacy2 from "./Privacy2"
 import Privacy3 from "./Privacy3"
 import { Link } from 'react-router-dom';
 import Contact from "../../Components/Footer/Footer"
+import { NavLink, NavLinks } from '../MainPage/Home.Styles';
+import { Para, Paragraph, Paragraphs, SectionTitle, Title } from '../Terms/Terms.Styles';
 const Privacy = () => {
        const [isOpen, setIsOpen] = useState(false);
   
@@ -72,27 +71,6 @@ const Privacy = () => {
           </br>Improve User Experience: Analyze feature use to enhance UI/UX, speed, and functionality.<br></br>
           Support You Better: Solve issues quickly and offer guidance when needed.
         </Para>
-
-     {/* <SectionTitle>Where & How We Store It</SectionTitle>
-        <Paragraph>
-          In-House Data Storage: All your data is stored in Rekory's own secure facilities — no third-party cloud services.<br></br>
-          Zero Data Sharing: We never sell, rent, or share your data. Period.<br></br>
-          <strong>Our security measures include :</strong><br></br>
-          24/7 surveillance and strict physical access to our data centers.<br></br>
-          Firewalls and network protection to block cyber threats. <br></br>
-          Bank-grade AES-256 encryption for all data, in transit and at rest.<br></br>
-          Role-based internal access with full monitoring.<br></br>
-          Regular security audits and backup protocols.<br></br>
-        </Paragraph> */}
-
-        {/* <SectionTitle>Your Rights</SectionTitle>
-        <Paragraph>
-       Access & Update: View and edit your data anytime within the app.<br></br>
-Portability: Request a downloadable copy of your data.<br></br>
- Delete: You can ask to delete your account, subject to legal requirements.
-        </Paragraph> */}
-
-        
       </ContentWrapper>
     </PageWrapper>
     <Privacy2 />

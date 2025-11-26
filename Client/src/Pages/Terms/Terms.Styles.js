@@ -106,6 +106,14 @@ font-family: "Reddit Sans";
 
   text-align: center;
 justify-content:center;
+
+  @media (max-width: 1440px) {
+    font-size: 1.8rem;
+}
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+}
+
   @media (max-width: 768px) {
     font-size: 2rem;
 }
@@ -120,6 +128,13 @@ export const SectionTitle = styled.h3`
   margin-top: 25px;
   margin-bottom: 20px;
 font-family: "Reddit Sans";
+
+  @media (max-width: 1440px) {
+    font-size: 1.5rem;
+}
+  @media (max-width: 1024px) {
+    font-size: 1.3rem;
+}
   @media (max-width: 768px) {
     font-size: 25PX;
   }
@@ -142,6 +157,16 @@ font-family: Lato;
 font-style: normal;
 font-weight: 400;
 // line-height: normal;
+
+  @media (max-width: 1920px) {
+    font-size: 1.6rem;
+}
+  @media (max-width: 1440px) {
+    font-size: 1.5rem;
+}
+  @media (max-width: 1024px) {
+    font-size: 1.2rem;
+}
   @media (max-width: 768px) {
     font-size: 1.2rem;
   }
@@ -155,6 +180,13 @@ export const Paragraph = styled.p`
   margin-bottom: 10px;
   // line-height: 1.6;
   font-family: Lato;
+
+  @media (max-width: 1920px) {
+    font-size: 1.6rem;
+}
+    @media (max-width: 1024px) {
+    font-size: 1.2rem;
+}
   @media (max-width: 768px) {
     font-size: 1.2rem;
   }
@@ -168,6 +200,13 @@ export const Para = styled.p`
   margin-bottom: 10px;
   font-family: Lato;
   // line-height: 1.6;
+  
+  @media (max-width: 1920px) {
+    font-size: 1.6rem;
+}
+    @media (max-width: 1024px) {
+    font-size: 1.2rem;
+}
   @media (max-width: 768px) {
      font-size: 1.2rem;
   }

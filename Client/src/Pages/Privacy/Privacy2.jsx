@@ -4,9 +4,9 @@ import {
   Container,
   Title,
   Section,
-  SectionTitle,
-  Text,
 } from "./Privacy2.Styles";
+import { SectionTitle } from "../Terms/Terms.Styles";
+import { Text } from "../Terms/Terms2.Styles";
 
 const Terms = () => {
   return (

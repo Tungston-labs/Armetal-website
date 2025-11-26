@@ -4,8 +4,8 @@ import styled from 'styled-components';
 export const HeroContainer = styled.section`
   width: 100%;
   min-height: 100vh;
-  // background: linear-gradient(to bottom, #001a4d, #002366);
-    background-image: url('/images/HOME.png'); /* place in public/images/HOME.png */
+ background: linear-gradient(to bottom, #001a4d, #002366);
+    background-image: url('/images/HOME.png'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

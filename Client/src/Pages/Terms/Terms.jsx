@@ -2,8 +2,8 @@ import React,{useState} from 'react';
 import {
   PageWrapper,
   Header,Para,
-  NavLinks,HamburgerIcon, MobileMenu,
-  NavLink,LogoWrapper,
+HamburgerIcon, MobileMenu,
+  LogoWrapper,
   ContentWrapper,
   Title,Paragraphs,
   Paragraph,
@@ -13,6 +13,7 @@ import Terms2 from "./Terms2"
 import Terms3 from './Terms3';
 import { Link } from 'react-router-dom';
 import Contact from "../../Components/Footer/Footer"
+import { NavLink, NavLinks } from '../MainPage/Home.Styles';
 const TermsPage = () => {
      const [isOpen, setIsOpen] = useState(false);
   return (

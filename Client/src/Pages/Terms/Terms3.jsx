@@ -4,9 +4,10 @@ import {
   Container,
   Title,
   Section,
-  SectionTitle,
-  Text,
+
 } from "./Terms3.Styles";
+import { SectionTitle } from "./Terms.Styles";
+import { Text } from "./Terms2.Styles";
 
 const Terms = () => {
   return (
