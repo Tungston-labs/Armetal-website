@@ -28,6 +28,7 @@ const ContactForm = () => {
   });
 
   const [loading, setLoading] = useState(false); // loading state
+const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -36,28 +37,24 @@ const ContactForm = () => {
     }));
   };
 
- const handleSubmit = async (e) => {
+const handleSubmit = async (e) => {
   e.preventDefault();
-  setLoading(true);
+  if (!validateForm()) return; // stop if validation fails
 
+  setLoading(true);
   Swal.fire({
     title: 'Sending...',
     allowOutsideClick: false,
-    didOpen: () => {
-      Swal.showLoading();
-    }
+    didOpen: () => { Swal.showLoading(); }
   });
 
   try {
     await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/contact`, formData);
-
     Swal.fire({
       icon: 'success',
       title: 'Message Sent!',
-      text: 'Your message has been sent successfully.',
       confirmButtonColor: '#3085d6',
     });
-
     setFormData({
       firstName: "",
       company: "",
@@ -66,18 +63,29 @@ const ContactForm = () => {
       source: "",
       message: "",
     });
+    setErrors({});
   } catch (err) {
     Swal.fire({
       icon: 'error',
       title: 'Oops...',
-      text: 'Something went wrong while sending your message.',
+      text: 'Something went wrong.',
       confirmButtonColor: '#d33',
     });
-    console.error(err);
   } finally {
     setLoading(false);
   }
 };
+const validateForm = () => {
+  const newErrors = {};
+  if (!formData.firstName.trim()) newErrors.firstName = "Name is required";
+  if (!formData.company.trim()) newErrors.company = "Company is required";
+  if (!formData.email.trim()) newErrors.email = "Email is required";
+  else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = "Email is invalid";
+
+  setErrors(newErrors);
+  return Object.keys(newErrors).length === 0;
+};
+
 
   return (
     <>
@@ -107,8 +115,26 @@ const ContactForm = () => {
 
         <RightColumn>
           <Form onSubmit={handleSubmit}>
+         {errors.firstName && (
+    <span style={{ color: "white", display: "flex", alignItems: "center", gap: "5px" }}>
+      <span>⚠️</span> {/* alert icon */}
+      {errors.firstName}
+    </span>
+  )}
               <Input name="firstName" value={formData.firstName} onChange={handleChange} autoComplete="off" placeholder=" Name" />
+              {errors.company && (
+    <span style={{ color: "white", display: "flex", alignItems: "center", gap: "5px" }}>
+      <span>⚠️</span>
+      {errors.company}
+    </span>
+  )}
             <Input name="company" value={formData.company} onChange={handleChange} autoComplete="off" placeholder="Company" />
+  {errors.email && (
+    <span style={{ color: "white", display: "flex", alignItems: "center", gap: "5px" }}>
+      <span>⚠️</span>
+      {errors.email}
+    </span>
+  )}
             <Input name="email" value={formData.email} onChange={handleChange} autoComplete="off" placeholder="Company E-mail" />
             <Input name="size" value={formData.size} onChange={handleChange}autoComplete="off" placeholder="Company size" />
             <Input name="source" value={formData.source} onChange={handleChange} autoComplete="off" placeholder="How did you hear about REKORY" />
