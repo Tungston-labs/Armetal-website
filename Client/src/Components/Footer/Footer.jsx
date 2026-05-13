@@ -29,7 +29,7 @@ const Footer = () => {
         <ContactSection>
           <ContactItem>
             <Icon><FaEnvelope /></Icon>
-            Email: support@arm-sbc.com.com
+            Email: support@arm-sbc.com
           </ContactItem>
           <ContactItem>
             <Icon><FaPhoneAlt /></Icon>
